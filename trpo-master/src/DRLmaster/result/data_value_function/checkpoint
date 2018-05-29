@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/initial/my_project_folder/my_project/src/python_code4/test/trpo-master/src/DRLmaster/result/data_policy/data_32.ckpt"
+all_model_checkpoint_paths: "/home/initial/my_project_folder/my_project/src/python_code4/test/trpo-master/src/DRLmaster/result/data_policy/data_32.ckpt"

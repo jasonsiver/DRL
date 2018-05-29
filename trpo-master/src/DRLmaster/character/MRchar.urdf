@@ -1,0 +1,518 @@
+<?xml version="1.0"?>
+<robot name="humanoidasimo_MRD">
+  <link name="base_link">
+    <inertial>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0"
+               iyy="0.0" iyz="0.0"
+               izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.0 0.0 0.0 0.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <link name="world">
+    <inertial>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0"
+               iyy="0.0" iyz="0.0"
+               izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.0 0.0 0.0 0.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="base_joint" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+  </joint>
+
+  <joint name="base_pelvis" type="fixed">
+    <parent link="base_link"/>
+    <child link="pelvis"/>
+    <axis xyz="0.0 0.0 0.0"/>
+   <origin xyz="0.0 0.0 0.89" rpy="0.0 0.0 0.0"/>
+  </joint>
+
+  <link name="pelvis">
+    <inertial>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0"
+               iyy="0.0" iyz="0.0"
+               izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.03" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.12 0.27 0.15"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.5 0.5 0.5 0.3"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="abdomen_x_joint" type="revolute">
+    <parent link="pelvis"/>
+    <child link="abdomen_x"/>
+    <axis xyz="1 0 0"/>
+    <origin xyz="0.0 0.0 0.1" rpy="0.0 0.0 0.0"/>
+    <limit lower="-3.14" upper="3.14" effort="200" velocity="1" />
+  </joint>
+  <link name="abdomen_x">
+    <inertial>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0"
+               iyy="0.0" iyz="0.0"
+               izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.0 0.0 0.0 0.0"/>
+      </material>
+    </visual>
+  </link>
+  <joint name="abdomen_y_joint" type="revolute">
+    <parent link="abdomen_x"/>
+    <child link="abdomen_y"/>
+    <axis xyz="0 1 0"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <limit lower="-3.14" upper="3.14" effort="200" velocity="1" />
+  </joint>
+  <link name="abdomen_y">
+    <inertial>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0"
+               iyy="0.0" iyz="0.0"
+               izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.0 0.0 0.0 0.0"/>
+      </material>
+    </visual>
+  </link>
+  <joint name="abdomen_z_joint" type="revolute">
+    <parent link="abdomen_y"/>
+    <child link="torso"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <limit lower="-3.14" upper="3.14" effort="200" velocity="1" />
+  </joint>
+
+  <link name="torso">
+    <inertial>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0"
+               iyy="0.0" iyz="0.0"
+               izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.17" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.13 0.29 0.33"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.5 0.5 0.5 0.3"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="right_hip_x_joint" type="revolute">
+    <parent link="pelvis"/>
+    <child link="right_hip_x"/>
+    <axis xyz="1 0 0"/>
+    <origin xyz="0.0 -0.085 0.0" rpy="0.0 0.0 0.0"/>
+    <limit lower="-3.14" upper="3.14" effort="200" velocity="1" />
+  </joint>
+  <link name="right_hip_x">
+    <inertial>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0"
+               iyy="0.0" iyz="0.0"
+               izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.0 0.0 0.0 0.0"/>
+      </material>
+    </visual>
+  </link>
+  <joint name="right_hip_y_joint" type="revolute">
+    <parent link="right_hip_x"/>
+    <child link="right_hip_y"/>
+    <axis xyz="0 1 0"/>
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    <limit lower="-3.14" upper="3.14" effort="200" velocity="1" />
+  </joint>
+  <link name="right_hip_y">
+    <inertial>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0"
+               iyy="0.0" iyz="0.0"
+               izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.0 0.0 0.0 0.0"/>
+      </material>
+    </visual>
+  </link>
+  <joint name="right_hip_z_joint" type="revolute">
+    <parent link="right_hip_y"/>
+    <child link="right_thigh"/>
+    <axis xyz="0 0 1"/>
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    <limit lower="-3.14" upper="3.14" effort="200" velocity="1" />
+  </joint>
+
+  <link name="right_thigh">
+    <inertial>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0"
+               iyy="0.0" iyz="0.0"
+               izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 -0.21075" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.09 0.09 0.4215"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.5 0.5 0.5 0.3"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="right_knee_joint" type="revolute">
+    <parent link="right_thigh"/>
+    <child link="right_knee"/>
+    <axis xyz="0 -1 0"/>
+    <origin xyz="0.0 0.0 -0.4215" rpy="0.0 0.0 0.0"/>
+    <limit lower="-3.14" upper="3.14" effort="150" velocity="1" />
+  </joint>
+
+  <link name="right_knee">
+    <inertial>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0"
+               iyy="0.0" iyz="0.0"
+               izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 -0.19493" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.07 0.07 0.43"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.5 0.5 0.5 0.3"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="right_ankle_x_joint" type="revolute">
+    <parent link="right_knee"/>
+    <child link="right_ankle_x"/>
+    <axis xyz="1 0 0"/>
+    <origin xyz="0.0 0.0 -0.40987" rpy="0.0 0.0 0.0"/>
+    <limit lower="-3.14" upper="3.14" effort="90" velocity="1" />
+  </joint>
+  <link name="right_ankle_x">
+    <inertial>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0"
+               iyy="0.0" iyz="0.0"
+               izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.0 0.0 0.0 0.0"/>
+      </material>
+    </visual>
+  </link>
+  <joint name="right_ankle_y_joint" type="revolute">
+    <parent link="right_ankle_x"/>
+    <child link="right_ankle_y"/>
+    <axis xyz="0 1 0"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <limit lower="-3.14" upper="3.14" effort="90" velocity="1" />
+  </joint>
+  <link name="right_ankle_y">
+    <inertial>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0"
+               iyy="0.0" iyz="0.0"
+               izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.0 0.0 0.0 0.0"/>
+      </material>
+    </visual>
+  </link>
+  <joint name="right_ankle_z_joint" type="revolute">
+    <parent link="right_ankle_y"/>
+    <child link="right_foot"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <limit lower="-3.14" upper="3.14" effort="90" velocity="1" />
+  </joint>
+
+  <link name="right_foot">
+    <inertial>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0"
+               iyy="0.0" iyz="0.0"
+               izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0518 0.0 -0.0224" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.177 0.09 0.05"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.5 0.5 0.5 0.3"/>
+      </material>
+    </visual>
+  </link>
+
+
+
+
+
+  <joint name="left_hip_x_joint" type="revolute">
+    <parent link="pelvis"/>
+    <child link="left_hip_x"/>
+    <axis xyz="1 0 0"/>
+    <origin xyz="0.0 0.085 0.0" rpy="0.0 0.0 0.0"/>
+    <limit lower="-3.14" upper="3.14" effort="200" velocity="1" />
+  </joint>
+  <link name="left_hip_x">
+    <inertial>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0"
+               iyy="0.0" iyz="0.0"
+               izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.0 0.0 0.0 0.0"/>
+      </material>
+    </visual>
+  </link>
+  <joint name="left_hip_y_joint" type="revolute">
+    <parent link="left_hip_x"/>
+    <child link="left_hip_y"/>
+    <axis xyz="0 1 0"/>
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    <limit lower="-3.14" upper="3.14" effort="200" velocity="1" />
+  </joint>
+  <link name="left_hip_y">
+    <inertial>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0"
+               iyy="0.0" iyz="0.0"
+               izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.0 0.0 0.0 0.0"/>
+      </material>
+    </visual>
+  </link>
+  <joint name="left_hip_z_joint" type="revolute">
+    <parent link="left_hip_y"/>
+    <child link="left_thigh"/>
+    <axis xyz="0 0 1"/>
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    <limit lower="-3.14" upper="3.14" effort="200" velocity="1" />
+  </joint>
+
+  <link name="left_thigh">
+    <inertial>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0"
+               iyy="0.0" iyz="0.0"
+               izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 -0.21075" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.09 0.09 0.4215"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.5 0.5 0.5 0.3"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="left_knee_joint" type="revolute">
+    <parent link="left_thigh"/>
+    <child link="left_knee"/>
+    <axis xyz="0 -1 0"/>
+    <origin xyz="0.0 0.0 -0.4215" rpy="0.0 0.0 0.0"/>
+    <limit lower="-3.14" upper="3.14" effort="150" velocity="1" />
+  </joint>
+
+  <link name="left_knee">
+    <inertial>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0"
+               iyy="0.0" iyz="0.0"
+               izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 -0.19493" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.07 0.07 0.43"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.5 0.5 0.5 0.3"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="left_ankle_x_joint" type="revolute">
+    <parent link="left_knee"/>
+    <child link="left_ankle_x"/>
+    <axis xyz="1 0 0"/>
+    <origin xyz="0.0 0.0 -0.40987" rpy="0.0 0.0 0.0"/>
+    <limit lower="-3.14" upper="3.14" effort="90" velocity="1" />
+  </joint>
+  <link name="left_ankle_x">
+    <inertial>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0"
+               iyy="0.0" iyz="0.0"
+               izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.0 0.0 0.0 0.0"/>
+      </material>
+    </visual>
+  </link>
+  <joint name="left_ankle_y_joint" type="revolute">
+    <parent link="left_ankle_x"/>
+    <child link="left_ankle_y"/>
+    <axis xyz="0 1 0"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <limit lower="-3.14" upper="3.14" effort="90" velocity="1" />
+  </joint>
+  <link name="left_ankle_y">
+    <inertial>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0"
+               iyy="0.0" iyz="0.0"
+               izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.0 0.0 0.0 0.0"/>
+      </material>
+    </visual>
+  </link>
+  <joint name="left_ankle_z_joint" type="revolute">
+    <parent link="left_ankle_y"/>
+    <child link="left_foot"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <limit lower="-3.14" upper="3.14" effort="90" velocity="1" />
+  </joint>
+
+  <link name="left_foot">
+    <inertial>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0"
+               iyy="0.0" iyz="0.0"
+               izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0518 0.0 -0.0224" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.177 0.09 0.05"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.5 0.5 0.5 0.3"/>
+      </material>
+    </visual>
+  </link>
+
+
+</robot>
+
+
