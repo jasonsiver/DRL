@@ -3,7 +3,7 @@ from gym.envs.mujoco import mujoco_env
 from gym import utils
 from cupy import float32
 import math
-import DRLmaster.main4_3 as mr_sim
+import DRLmaster.main4_4 as mr_sim
 import pybullet as p
 
 
@@ -197,7 +197,7 @@ class HumanoidasimoMRD4_2Env(mujoco_env.MujocoEnv, utils.EzPickle):
     def reset_model(self):
         
         self.agent.env._reset()
-        
+        '''
         c = 0.01
         self.set_state(
             self.init_qpos + self.np_random.uniform(low=-c, high=c, size=self.model.nq),
@@ -207,7 +207,8 @@ class HumanoidasimoMRD4_2Env(mujoco_env.MujocoEnv, utils.EzPickle):
         return self._get_obs()
         '''
         c = 0.01
-        pos=self.pos.copy()
+        pos = self.agent.env.qh[26].copy()##self.pos.copy()
+        ra = self.agent.env.rah[26].copy()
         #print str1
         
         #self.init_qpos[2]=self.init_qpos[2]+0.3
@@ -222,51 +223,32 @@ class HumanoidasimoMRD4_2Env(mujoco_env.MujocoEnv, utils.EzPickle):
         qpos.flags
         qpos.setflags(write=1)
         #qpos[2]=qpos[2]+0.3
-        for i in range(2,6):
-            qpos[i]=pos[i].copy()
-        qpos[0]=0.0#pos[0].copy()
-        qpos[1]=0.0#pos[1].copy()
-        qpos[2]=pos[1].copy()
-        qpos[3]=pos[3].copy()
-        qpos[4]=pos[4].copy()
-        qpos[5]=pos[5].copy()
-        qpos[6]=pos[6].copy()
-        #for i in range(7,46,4):
-        #torso_w,torso_x,torso_y,torso_z
-        X_torso,Y_torso,Z_torso=quaternion_to_euler_angle(pos[7], pos[8],pos[9],pos[10])
-        qpos[7]=X_torso/180.0*3.1415*-1.0
-        qpos[8]=Z_torso/180.0*3.1415*-1.0
-        qpos[9]=Y_torso/180.0*3.1415*-1.0
-        
-        #right_hip_w,right_hip_x,right_hip_y,right_hip_z
-        X_right_hip,Y_right_hip,Z_right_hip=quaternion_to_euler_angle(pos[11],pos[12],pos[13],pos[14])
-        qpos[10]=X_right_hip/180.0*3.1415*-1.0
-        qpos[11]=Z_right_hip/180.0*3.1415*-1.0
-        qpos[12]=Y_right_hip/180.0*3.1415*-1.0
-
-        #right_knee
-        qpos[13]=pos[15].copy()
-        
-        #right_ankle_w,right_ankle_x,right_ankle_y,right_ankle_z
-        X_right_ankle,Y_right_ankle,Z_right_ankle=quaternion_to_euler_angle(pos[16],pos[17],pos[18],pos[19])
-        qpos[14]=X_right_ankle/180.0*3.1415*-1.0
-        qpos[15]=Z_right_ankle/180.0*3.1415*-1.0
-        qpos[16]=Y_right_ankle/180.0*3.1415*-1.0        
-        
-        #left_hip_w,left_hip_x,left_hip_y,left_hip_z
-        X_left_hip,Y_left_hip,Z_left_hip=quaternion_to_euler_angle(pos[20],pos[21],pos[22],pos[23])
-        qpos[17]=X_left_hip/180.0*3.1415*-1.0
-        qpos[18]=Z_left_hip/180.0*3.1415*-1.0
-        qpos[19]=Y_left_hip/180.0*3.1415*-1.0
-        
-        #left_knee
-        qpos[20]=pos[24].copy()
-
-        #left_ankle_w,left_ankle_x,left_ankle_y,left_ankle_z
-        X_left_ankle,Y_left_ankle,Z_left_ankle=quaternion_to_euler_angle(pos[25],pos[26],pos[27],pos[28])
-        qpos[21]=X_left_ankle/180.0*3.1415*-1.0
-        qpos[22]=Z_left_ankle/180.0*3.1415*-1.0
-        qpos[23]=Y_left_ankle/180.0*3.1415*-1.0
+        #for i in range(2,6):
+        #    qpos[i]=pos[i].copy()
+        qpos[0]=pos[0][0].copy()
+        qpos[1]=pos[0][1].copy()
+        qpos[2]=pos[0][2].copy()
+        qpos[3]=pos[0][3].copy()
+        qpos[4]=pos[0][4].copy()
+        qpos[5]=pos[0][5].copy()
+        qpos[6]=pos[0][6].copy()
+        qpos[7]=pos[0][7].copy()
+        qpos[8]=pos[0][8].copy()
+        qpos[9]=pos[0][9].copy()
+        qpos[10]=pos[0][10].copy()
+        qpos[11]=pos[0][11].copy()
+        qpos[12]=pos[0][12].copy()
+        qpos[13]=pos[0][13].copy()
+        qpos[14]=pos[0][14].copy()
+        qpos[15]=pos[0][15].copy()
+        qpos[16]=pos[0][16].copy()        
+        qpos[17]=pos[0][17].copy()
+        qpos[18]=pos[0][18].copy()
+        qpos[19]=pos[0][19].copy()
+        qpos[20]=pos[0][20].copy()
+        qpos[21]=pos[0][21].copy()
+        qpos[22]=pos[0][22].copy()
+        qpos[23]=pos[0][23].copy()
         
         qpos.setflags(write=0)
        
@@ -275,7 +257,7 @@ class HumanoidasimoMRD4_2Env(mujoco_env.MujocoEnv, utils.EzPickle):
             qpos + self.np_random.uniform(low=-c, high=c, size=self.model.nq),
             qvel + self.np_random.uniform(low=-c, high=c, size=self.model.nv,)
         )
-        '''
+        return self._get_obs()
         
         ##
     def viewer_setup(self):
