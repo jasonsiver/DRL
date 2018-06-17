@@ -1,0 +1,230 @@
+
+  <joint name="BY_joint" type="revolute">
+    <origin xyz="0.06 0.0 0.15" rpy="0.0 0.0 0.0"/>
+    <parent link="WAIST"/>
+    <child link="BY"/>
+  </joint>
+  <joint name="BZ_joint" type="revolute">
+    <origin xyz="-0.08 0.0 0.03250003" rpy="0.0 0.0 0.0"/>
+    <parent link="BY"/>
+    <child link="CHEST"/>
+  </joint>
+  <joint name="LArm_SHY_joint" type="revolute">
+    <origin xyz="0.04 0.17 0.234" rpy="0.3490659127973758 -0.0 0.0"/>
+    <parent link="CHEST"/>
+    <child link="LArm_SHY"/>
+  </joint>
+  <joint name="LArm_SHZ_joint" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <parent link="LArm_SHY"/>
+    <child link="LArm_SHZ"/>
+  </joint>
+  <joint name="LArm_SHX_joint" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <parent link="LArm_SHZ"/>
+    <child link="LArm_SHX"/>
+  </joint>
+  <joint name="LArm_ELM_joint" type="revolute">
+    <origin xyz="0.16 1.587784e-09 0.007" rpy="-1.6045987794776685e-18 -1.7392595738821134e-05 1.8451515846546992e-13"/>
+    <parent link="LArm_SHX"/>
+    <child link="LArm_ELM"/>
+  </joint>
+  <joint name="LArm_EL1_joint" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <parent link="LArm_ELM"/>
+    <child link="LArm_EL1"/>
+    <mimic joint="LArm_ELM_joint" multiplier="-0.38671" offset="-1.739259697155166e-05"/>
+  </joint>
+  <joint name="LArm_EL2_joint" type="revolute">
+    <origin xyz="0.054043 1.269468e-08 0.007041047" rpy="-5.70125581341757e-18 3.4349963431618825e-05 -3.428628343842024e-13"/>
+    <parent link="LArm_EL1"/>
+    <child link="LArm_EL2"/>
+    <mimic joint="LArm_ELM_joint" multiplier="2.400873105074569e-01" offset="3.434995647803795e-05"/>
+  </joint>
+  <joint name="LArm_WRX_joint" type="revolute">
+    <origin xyz="0.141457 -6.913041e-10 -0.01404099" rpy="-1.5707963267948966 -1.6199122423815246e-12 -3.629551240286649e-13"/>
+    <parent link="LArm_EL2"/>
+    <child link="LArm_WRX"/>
+  </joint>
+  <joint name="LArm_WRZ_joint" type="revolute">
+    <origin xyz="5.551115e-17 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <parent link="LArm_WRX"/>
+    <child link="LArm_WRZ"/>
+  </joint>
+  <joint name="LArm_WRY_joint" type="revolute">
+    <origin xyz="5.551115e-17 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <parent link="LArm_WRZ"/>
+    <child link="LArm_WRY"/>
+  </joint>
+  <joint name="LArm_6AF_joint" type="revolute">
+    <origin xyz="0.03978 -1.898481e-14 -2.731149e-14" rpy="0.0 -0.0 0.0"/>
+    <parent link="LArm_WRY"/>
+    <child link="LHand_Base"/>
+  </joint>
+  
+
+
+  <joint name="PAN_joint" type="revolute">
+    <origin xyz="0.04 0.0 0.234" rpy="0.0 0.0 0.0"/>
+    <parent link="CHEST"/>
+    <child link="PAN"/>
+  </joint>
+  <joint name="TILT1_joint" type="revolute">
+    <origin xyz="0.012 0.0 0.06324005" rpy="0.0 0.0 0.0"/>
+    <parent link="PAN"/>
+    <child link="TILT1"/>
+  </joint>
+  <joint name="TILT2_joint" type="revolute">
+    <origin xyz="0.01742593 0.0 0.06158185" rpy="0.0 0.0 0.0"/>
+    <parent link="TILT1"/>
+    <child link="TILT2"/>
+  </joint>
+  <joint name="TILT3_joint" type="revolute">
+    <origin xyz="0.001896325 0.0 -0.02492797" rpy="0.0 0.0 0.0"/>
+    <parent link="TILT2"/>
+    <child link="TILT3"/>
+  </joint>
+  <joint name="ROLL_joint" type="revolute">
+    <origin xyz="-0.03132225 0.0 0.02844131" rpy="0.0 0.0 0.0"/>
+    <parent link="TILT3"/>
+    <child link="ROLL"/>
+  </joint>
+
+
+  <joint name="RArm_SHY_joint" type="revolute">
+    <origin xyz="0.04 -0.17 0.234" rpy="-0.3490659127973758 0.0 0.0"/>
+    <parent link="CHEST"/>
+    <child link="RArm_SHY"/>
+  </joint>
+  <joint name="RArm_SHZ_joint" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <parent link="RArm_SHY"/>
+    <child link="RArm_SHZ"/>
+  </joint>
+  <joint name="RArm_SHX_joint" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <parent link="RArm_SHZ"/>
+    <child link="RArm_SHX"/>
+  </joint>
+  <joint name="RArm_ELM_joint" type="revolute">
+    <origin xyz="0.16 -1.587784e-09 0.007" rpy="1.6045987794776685e-18 -1.7392595738821134e-05 -1.8451515846546992e-13"/>
+    <parent link="RArm_SHX"/>
+    <child link="RArm_ELM"/>
+  </joint>
+  <joint name="RArm_EL1_joint" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <parent link="RArm_ELM"/>
+    <child link="RArm_EL1"/>
+    <mimic joint="RArm_ELM_joint" multiplier="-0.38671" offset="-1.739259697155166e-05"/>
+  </joint>
+  <joint name="RArm_EL2_joint" type="revolute">
+    <origin xyz="0.054043 -1.269468e-08 0.007041047" rpy="5.70125581341757e-18 3.4349963431618825e-05 3.428628343842024e-13"/>
+    <parent link="RArm_EL1"/>
+    <child link="RArm_EL2"/>
+    <mimic joint="RArm_ELM_joint" multiplier="2.400873105074569e-01" offset="3.434995647803795e-05"/>
+  </joint>
+  <joint name="RArm_WRX_joint" type="revolute">
+    <origin xyz="0.141457 6.913041e-10 -0.01404099" rpy="1.5707963267948966 -1.6199122423815246e-12 3.629551240286649e-13"/>
+    <parent link="RArm_EL2"/>
+    <child link="RArm_WRX"/>
+  </joint>
+  <joint name="RArm_WRZ_joint" type="revolute">
+    <origin xyz="5.551115e-17 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <parent link="RArm_WRX"/>
+    <child link="RArm_WRZ"/>
+  </joint>
+  <joint name="RArm_WRY_joint" type="revolute">
+    <origin xyz="5.551115e-17 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <parent link="RArm_WRZ"/>
+    <child link="RArm_WRY"/>
+  </joint>
+  <joint name="RArm_6AF_joint" type="revolute">
+    <origin xyz="0.03978 1.898481e-14 -2.731149e-14" rpy="0.0 -0.0 0.0"/>
+    <parent link="RArm_WRY"/>
+    <child link="RHand_Base"/>
+  </joint>
+  
+
+  <joint name="LLeg_1Z_joint" type="revolute">
+    <origin xyz="0.0 0.08 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="WAIST"/>
+    <child link="LLeg_1Z"/>
+  </joint>
+  <joint name="LLeg_1X_joint" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="LLeg_1Z"/>
+    <child link="LLeg_1X"/>
+  </joint>
+  <joint name="LLeg_1Y_joint" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="LLeg_1X"/>
+    <child link="LLeg_1Y"/>
+  </joint>
+  <joint name="LLeg_2Y_joint" type="revolute">
+    <origin xyz="0.0 0.0 -0.266" rpy="0.0 0.0 0.0"/>
+    <parent link="LLeg_1Y"/>
+    <child link="LLeg_2Y"/>
+  </joint>
+  <joint name="LLeg_3Y_joint" type="revolute">
+    <origin xyz="0.0 0.0 -0.266" rpy="0.0 0.0 0.0"/>
+    <parent link="LLeg_2Y"/>
+    <child link="LLeg_3Y"/>
+  </joint>
+  <joint name="LLeg_3X_joint" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="LLeg_3Y"/>
+    <child link="LLeg_3X"/>
+  </joint>
+  <joint name="LLeg_6AF_joint" type="revolute">
+    <origin xyz="0.0 0.0 -0.044" rpy="0.0 0.0 0.0"/>
+    <parent link="LLeg_3X"/>
+    <child link="LLeg_6AF"/>
+  </joint>
+  <joint name="LLeg_FOOT_joint" type="revolute">
+    <origin xyz="0.0 0.0 0.044" rpy="0.0 0.0 -0.052359882250491756"/>
+    <parent link="LLeg_6AF"/>
+    <child link="LLeg_FOOT"/>
+  </joint>
+
+
+
+  <joint name="RLeg_1Z_joint" type="revolute">
+    <origin xyz="0.0 -0.08 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="WAIST"/>
+    <child link="RLeg_1Z"/>
+  </joint>
+  <joint name="RLeg_1X_joint" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="RLeg_1Z"/>
+    <child link="RLeg_1X"/>
+  </joint>
+  <joint name="RLeg_1Y_joint" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="RLeg_1X"/>
+    <child link="RLeg_1Y"/>
+  </joint>
+  <joint name="RLeg_2Y_joint" type="revolute">
+    <origin xyz="0.0 0.0 -0.266" rpy="0.0 0.0 0.0"/>
+    <parent link="RLeg_1Y"/>
+    <child link="RLeg_2Y"/>
+  </joint>
+  <joint name="RLeg_3Y_joint" type="revolute">
+    <origin xyz="0.0 0.0 -0.266" rpy="0.0 0.0 0.0"/>
+    <parent link="RLeg_2Y"/>
+    <child link="RLeg_3Y"/>
+  </joint>
+  <joint name="RLeg_3X_joint" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="RLeg_3Y"/>
+    <child link="RLeg_3X"/>
+  </joint>
+  <joint name="RLeg_6AF_joint" type="revolute">
+    <origin xyz="0.0 0.0 -0.044" rpy="0.0 0.0 0.0"/>
+    <parent link="RLeg_3X"/>
+    <child link="RLeg_6AF"/>
+  </joint>
+  <joint name="RLeg_FOOT_joint" type="revolute">
+    <origin xyz="0.0 0.0 0.044" rpy="0.0 -0.0 0.052359882250491756"/>
+    <parent link="RLeg_6AF"/>
+    <child link="RLeg_FOOT"/>
+  </joint>

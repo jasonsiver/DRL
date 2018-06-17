@@ -1,0 +1,10 @@
+{
+	"ClusterMotions": true,
+	"ClusterDist": 0.01,
+	"MotionFiles":
+	[
+		"data/motions/mocap/asimo/0007_Walking001_motion_00000_retargeted_asimo.txt",
+		"data/motions/mocap/asimo/0007_Walking001_motion_00001_retargeted_asimo.txt",
+		"data/motions/mocap/asimo/0007_Walking001_motion_00002_retargeted_asimo.txt"
+	]
+}

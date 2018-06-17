@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<robot name="asimo">
+  <link name="WAIST">
+    <inertial>
+      <mass value="4.124"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.01348333 0.0 0.1238364"/>
+    </inertial>
+  </link>
+
+
+  <link name="BY">
+    <inertial>
+      <mass value="1.503"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.08341 0.0 0.023287"/>
+    </inertial>
+  </link>
+  <link name="CHEST">
+    <inertial>
+      <mass value="16.32"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.01338916 0.0 0.1298649"/>
+    </inertial>
+  </link>
+
+
+
+
+  <link name="RLeg_1Z">
+    <inertial>
+      <mass value="0.939"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.02883143 -8.789883e-05 0.03693663"/>
+    </inertial>
+  </link>
+  <link name="RLeg_1X">
+    <inertial>
+      <mass value="1.007"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.001131929 -0.01786199 -0.0003750993"/>
+    </inertial>
+  </link>
+  <link name="RLeg_1Y">
+    <inertial>
+      <mass value="2.529"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.01315751 -0.01421511 -0.1181176"/>
+    </inertial>
+  </link>
+  <link name="RLeg_2Y">
+    <inertial>
+      <mass value="1.57"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.01915456 -0.003502954 -0.1083528"/>
+    </inertial>
+  </link>
+  <link name="RLeg_3Y">
+    <inertial>
+      <mass value="0.075"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.0187528 0.0 0.0175434"/>
+    </inertial>
+  </link>
+  <link name="RLeg_3X">
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    </inertial>
+  </link>
+  <link name="RLeg_6AF">
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    </inertial>
+  </link>
+  <link name="RLeg_FOOT">
+    <inertial>
+      <mass value="0.747"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.004738519 -0.0001931379 -0.040689"/>
+    </inertial>
+  </link>
+
+
+
+
+  <link name="LLeg_1Z">
+    <inertial>
+      <mass value="0.939"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.02883143 8.789883e-05 0.03693663"/>
+    </inertial>
+  </link>
+  <link name="LLeg_1X">
+    <inertial>
+      <mass value="1.007"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.001131929 0.01786199 -0.0003750993"/>
+    </inertial>
+  </link>
+  <link name="LLeg_1Y">
+    <inertial>
+      <mass value="2.529"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.01315751 0.01421511 -0.1181176"/>
+    </inertial>
+  </link>
+  <link name="LLeg_2Y">
+    <inertial>
+      <mass value="1.57"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.01915456 0.003502954 -0.1083528"/>
+    </inertial>
+  </link>
+  <link name="LLeg_3Y">
+    <inertial>
+      <mass value="0.075"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.0187528 -0.0 0.0175434"/>
+    </inertial>
+  </link>
+  <link name="LLeg_3X">
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    </inertial>
+  </link>
+  <link name="LLeg_6AF">
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    </inertial>
+  </link>
+  <link name="LLeg_FOOT">
+    <inertial>
+      <mass value="0.747"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.004738519 0.0001931379 -0.040689"/>
+    </inertial>
+  </link>
+
+
+
+
+ <link name="RArm_SHY">
+    <inertial>
+      <mass value="0.605"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.0013 0.0462 -0.0023"/>
+    </inertial>
+  </link>
+  <link name="RArm_SHZ">
+    <inertial>
+      <mass value="0.992"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0229 -0.001 -0.0064"/>
+    </inertial>
+  </link>
+  <link name="RArm_SHX">
+    <inertial>
+      <mass value="0.801"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.1178 0.0024 -0.001"/>
+    </inertial>
+  </link>
+  <link name="RArm_ELM">
+    <inertial>
+      <mass value="0.0001"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.03 0.0 -0.0209"/>
+    </inertial>
+  </link>
+  <link name="RArm_EL1">
+    <inertial>
+      <mass value="0.093"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.03 0.0 -0.0209"/>
+    </inertial>
+  </link>
+  <link name="RArm_EL2">
+    <inertial>
+      <mass value="0.112"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0139 0.0 -0.0188"/>
+    </inertial>
+  </link>
+  <link name="RArm_WRX">
+    <inertial>
+      <mass value="0.571"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0683 -0.0012 -0.0105"/>
+    </inertial>
+  </link>
+  <link name="RArm_WRZ">
+    <inertial>
+      <mass value="0.148"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.0001 -0.0018 0.0"/>
+    </inertial>
+  </link>
+  <link name="RArm_WRY">
+    <inertial>
+      <mass value="0.095"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0255 0.0016 0.0001"/>
+    </inertial>
+  </link>
+  <link name="RHand_Base">
+    <inertial>
+      <mass value="0.15"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.035 0.0 0.015"/>
+    </inertial>
+  </link>
+
+
+
+
+  <link name="LArm_SHY">
+    <inertial>
+      <mass value="0.605"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.0013 -0.0462 -0.0023"/>
+    </inertial>
+  </link>
+  <link name="LArm_SHZ">
+    <inertial>
+      <mass value="0.992"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0229 0.001 -0.0064"/>
+    </inertial>
+  </link>
+  <link name="LArm_SHX">
+    <inertial>
+      <mass value="0.801"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.1178 -0.0024 -0.001"/>
+    </inertial>
+  </link>
+  <link name="LArm_ELM">
+    <inertial>
+      <mass value="0.0001"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.03 -0.0 -0.0209"/>
+    </inertial>
+  </link>
+  <link name="LArm_EL1">
+    <inertial>
+      <mass value="0.093"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.03 -0.0 -0.0209"/>
+    </inertial>
+  </link>
+  <link name="LArm_EL2">
+    <inertial>
+      <mass value="0.112"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0139 -0.0 -0.0188"/>
+    </inertial>
+  </link>
+  <link name="LArm_WRX">
+    <inertial>
+      <mass value="0.571"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0683 0.0012 -0.0105"/>
+    </inertial>
+  </link>
+  <link name="LArm_WRZ">
+    <inertial>
+      <mass value="0.148"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.0001 0.0018 0.0"/>
+    </inertial>
+  </link>
+  <link name="LArm_WRY">
+    <inertial>
+      <mass value="0.095"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0255 -0.0016 0.0001"/>
+    </inertial>
+  </link>
+  <link name="LHand_Base">
+    <inertial>
+      <mass value="0.15"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.035 0.0 0.015"/>
+    </inertial>
+  </link>
+
+
+
+  <link name="PAN">
+    <inertial>
+      <mass value="0.309"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.002 0.027"/>
+    </inertial>
+  </link>
+  <link name="TILT1">
+    <inertial>
+      <mass value="0.335"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.021 0.001 0.017"/>
+    </inertial>
+  </link>
+  <link name="TILT2">
+    <inertial>
+      <mass value="0.061"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.012 0.0 0.012"/>
+    </inertial>
+  </link>
+  <link name="TILT3">
+    <inertial>
+      <mass value="0.083"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.027 0.0 0.008"/>
+    </inertial>
+  </link>
+  <link name="ROLL">
+    <inertial>
+      <mass value="2.078"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.01 0.0 0.049"/>
+    </inertial>
+  </link>
+ 
+
+</robot>

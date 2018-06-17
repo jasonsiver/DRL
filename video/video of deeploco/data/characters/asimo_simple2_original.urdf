@@ -1,0 +1,2990 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<robot name="asimo">
+  <link name="WAIST">
+    <visual>
+      <geometry>
+        <mesh filename="WAIST_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="WAIST_0-visual2-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="WAIST_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="WAIST_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="4.124"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.01348333 0.0 0.1238364"/>
+      <inertia ixx="0.02325676" ixy="0.0" ixz="0.0" iyy="0.01717778" iyz="0.0" izz="0.03409146"/>
+    </inertial>
+  </link>
+  <link name="BY">
+    <inertial>
+      <mass value="1.503"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.08341 0.0 0.023287"/>
+      <inertia ixx="0.004002" ixy="0.0" ixz="0.0" iyy="0.004123" iyz="0.0" izz="0.007194"/>
+    </inertial>
+  </link>
+  <link name="CHEST">
+    <visual>
+      <geometry>
+        <mesh filename="CHEST_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="CHEST_0-visual2-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="CHEST_0-visual3-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="CHEST_0-visual4-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="CHEST_0-visual5-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="CHEST_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="CHEST_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="CHEST_0-collision3.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="16.32"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.01338916 0.0 0.1298649"/>
+      <inertia ixx="0.1900265" ixy="0.0" ixz="0.0" iyy="0.2086098" iyz="0.0" izz="0.1965187"/>
+    </inertial>
+  </link>
+  <link name="LArm_SHY">
+    <visual>
+      <geometry>
+        <mesh filename="LArm_SHY_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="LArm_SHY_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.605"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.0013 -0.0462 -0.0023"/>
+      <inertia ixx="0.002635" ixy="0.0" ixz="0.0" iyy="0.0008647" iyz="0.0" izz="0.002263"/>
+    </inertial>
+  </link>
+  <link name="LArm_SHZ">
+    <visual>
+      <geometry>
+        <mesh filename="Arm_SHZ_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="Arm_SHZ_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.992"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0229 0.001 -0.0064"/>
+      <inertia ixx="0.001368" ixy="0.0" ixz="0.0" iyy="0.002068" iyz="0.0" izz="0.00146"/>
+    </inertial>
+  </link>
+  <link name="LArm_SHX">
+    <visual>
+      <geometry>
+        <mesh filename="Arm_SHX_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="Arm_SHX_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.801"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.1178 -0.0024 -0.001"/>
+      <inertia ixx="0.0004525" ixy="0.0" ixz="0.0" iyy="0.001762" iyz="0.0" izz="0.001765"/>
+    </inertial>
+  </link>
+  <link name="LArm_ELM">
+    <inertial>
+      <mass value="0.0001"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.03 -0.0 -0.0209"/>
+      <inertia ixx="1e-10" ixy="0.0" ixz="0.0" iyy="1e-10" iyz="0.0" izz="1e-10"/>
+    </inertial>
+  </link>
+  <link name="LArm_EL1">
+    <visual>
+      <origin rpy="0.0 -0.0 0.0" xyz="0.01 0.0 0.007"/>
+      <geometry>
+        <mesh filename="Arm_EL1_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="Arm_EL1_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="Arm_EL1_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.093"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.03 -0.0 -0.0209"/>
+      <inertia ixx="9.49e-05" ixy="0.0" ixz="0.0" iyy="6.153e-05" iyz="0.0" izz="0.0001491"/>
+    </inertial>
+  </link>
+  <link name="LArm_EL2">
+    <visual>
+      <geometry>
+        <mesh filename="Arm_EL2_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="Arm_EL2_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.112"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0139 -0.0 -0.0188"/>
+      <inertia ixx="7.142e-05" ixy="0.0" ixz="0.0" iyy="6.123e-05" iyz="0.0" izz="7.21e-05"/>
+    </inertial>
+  </link>
+  <link name="LArm_WRX">
+    <visual>
+      <geometry>
+        <mesh filename="Arm_WRX_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="Arm_WRX_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.571"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0683 0.0012 -0.0105"/>
+      <inertia ixx="0.0004874" ixy="0.0" ixz="0.0" iyy="0.0007913" iyz="0.0" izz="0.0007028"/>
+    </inertial>
+  </link>
+  <link name="LArm_WRZ">
+    <inertial>
+      <mass value="0.148"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.0001 0.0018 0.0"/>
+      <inertia ixx="5.951e-05" ixy="0.0" ixz="0.0" iyy="1.842e-05" iyz="0.0" izz="5.973e-05"/>
+    </inertial>
+  </link>
+  <link name="LArm_WRY">
+    <inertial>
+      <mass value="0.095"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0255 -0.0016 0.0001"/>
+      <inertia ixx="4.095e-05" ixy="0.0" ixz="0.0" iyy="4.879e-05" iyz="0.0" izz="5.235e-05"/>
+    </inertial>
+  </link>
+  <link name="LHand_Base">
+    <visual>
+      <geometry>
+        <mesh filename="LHand_Base_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="LHand_Base_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="LHand_Base_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="LHand_Base_0-collision3.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.15"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.035 0.0 0.015"/>
+      <inertia ixx="7.35e-05" ixy="0.0" ixz="0.0" iyy="7.35e-05" iyz="0.0" izz="7.35e-05"/>
+    </inertial>
+  </link>
+  <link name="L_IndexFingerBase">
+    <visual>
+      <geometry>
+        <mesh filename="IndexFingerBase_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFingerBase_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0055 0.0 0.0"/>
+      <inertia ixx="3.61e-07" ixy="0.0" ixz="0.0" iyy="3.61e-07" iyz="0.0" izz="3.61e-07"/>
+    </inertial>
+  </link>
+  <link name="L_IndexFinger1">
+    <visual>
+      <geometry>
+        <mesh filename="IndexFinger1_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger1_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger1_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger1_0-collision3.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.01575 0.0 0.0"/>
+      <inertia ixx="1.6e-06" ixy="0.0" ixz="0.0" iyy="1.6e-06" iyz="0.0" izz="1.6e-06"/>
+    </inertial>
+  </link>
+  <link name="L_IndexFinger2">
+    <visual>
+      <geometry>
+        <mesh filename="IndexFinger2_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger2_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger2_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0095 0.0 0.0"/>
+      <inertia ixx="8.41e-07" ixy="0.0" ixz="0.0" iyy="8.41e-07" iyz="0.0" izz="8.41e-07"/>
+    </inertial>
+  </link>
+  <link name="L_IndexFinger3">
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0104 0.0 0.0"/>
+      <inertia ixx="8.2944e-07" ixy="0.0" ixz="0.0" iyy="8.2944e-07" iyz="0.0" izz="8.2944e-07"/>
+    </inertial>
+  </link>
+  <link name="L_IndexFingerTip">
+    <visual>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="IndexFingerTip_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="IndexFingerTip_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="IndexFingerTip_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <inertia ixx="3.24e-07" ixy="0.0" ixz="0.0" iyy="3.24e-07" iyz="0.0" izz="3.24e-07"/>
+    </inertial>
+  </link>
+  <link name="L_LittleFingerBase">
+    <visual>
+      <geometry>
+        <mesh filename="LittleFingerBase_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="LittleFingerBase_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0055 0.0 0.0"/>
+      <inertia ixx="3.61e-07" ixy="0.0" ixz="0.0" iyy="3.61e-07" iyz="0.0" izz="3.61e-07"/>
+    </inertial>
+  </link>
+  <link name="L_LittleFinger1">
+    <visual>
+      <geometry>
+        <mesh filename="LittleFinger1_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="LittleFinger1_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="LittleFinger1_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="LittleFinger1_0-collision3.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.01425 0.0 0.0"/>
+      <inertia ixx="1.33225e-06" ixy="0.0" ixz="0.0" iyy="1.33225e-06" iyz="0.0" izz="1.33225e-06"/>
+    </inertial>
+  </link>
+  <link name="L_LittleFinger2">
+    <visual>
+      <geometry>
+        <mesh filename="IndexFinger2_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger2_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger2_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.009287 0.0 0.002"/>
+      <inertia ixx="8.41e-07" ixy="0.0" ixz="0.0" iyy="8.41e-07" iyz="0.0" izz="8.41e-07"/>
+    </inertial>
+  </link>
+  <link name="L_LittleFinger3">
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0104 0.0 0.0"/>
+      <inertia ixx="8.2944e-07" ixy="0.0" ixz="0.0" iyy="8.2944e-07" iyz="0.0" izz="8.2944e-07"/>
+    </inertial>
+  </link>
+  <link name="L_LittleFingerTip">
+    <visual>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="LittleFingerTip_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="LittleFingerTip_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="LittleFingerTip_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <inertia ixx="3.24e-07" ixy="0.0" ixz="0.0" iyy="3.24e-07" iyz="0.0" izz="3.24e-07"/>
+    </inertial>
+  </link>
+  <link name="L_MidFingerBase">
+    <visual>
+      <geometry>
+        <mesh filename="IndexFingerBase_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFingerBase_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0055 0.0 0.0"/>
+      <inertia ixx="3.61e-07" ixy="0.0" ixz="0.0" iyy="3.61e-07" iyz="0.0" izz="3.61e-07"/>
+    </inertial>
+  </link>
+  <link name="L_MidFinger1">
+    <visual>
+      <geometry>
+        <mesh filename="IndexFinger1_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger1_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger1_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger1_0-collision3.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.01575 0.0 0.0"/>
+      <inertia ixx="1.6e-06" ixy="0.0" ixz="0.0" iyy="1.6e-06" iyz="0.0" izz="1.6e-06"/>
+    </inertial>
+  </link>
+  <link name="L_MidFinger2">
+    <visual>
+      <geometry>
+        <mesh filename="IndexFinger2_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger2_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger2_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0095 0.0 0.0"/>
+      <inertia ixx="8.41e-07" ixy="0.0" ixz="0.0" iyy="8.41e-07" iyz="0.0" izz="8.41e-07"/>
+    </inertial>
+  </link>
+  <link name="L_MidFinger3">
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0104 0.0 0.0"/>
+      <inertia ixx="8.2944e-07" ixy="0.0" ixz="0.0" iyy="8.2944e-07" iyz="0.0" izz="8.2944e-07"/>
+    </inertial>
+  </link>
+  <link name="L_MidFingerTip">
+    <visual>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="IndexFingerTip_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="IndexFingerTip_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="IndexFingerTip_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <inertia ixx="3.24e-07" ixy="0.0" ixz="0.0" iyy="3.24e-07" iyz="0.0" izz="3.24e-07"/>
+    </inertial>
+  </link>
+  <link name="L_RingFingerBase">
+    <visual>
+      <geometry>
+        <mesh filename="IndexFingerBase_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFingerBase_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0055 0.0 0.0"/>
+      <inertia ixx="3.61e-07" ixy="0.0" ixz="0.0" iyy="3.61e-07" iyz="0.0" izz="3.61e-07"/>
+    </inertial>
+  </link>
+  <link name="L_RingFinger1">
+    <visual>
+      <geometry>
+        <mesh filename="LittleFinger1_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="LittleFinger1_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="LittleFinger1_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="LittleFinger1_0-collision3.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.01425 0.0 0.0"/>
+      <inertia ixx="1.33225e-06" ixy="0.0" ixz="0.0" iyy="1.33225e-06" iyz="0.0" izz="1.33225e-06"/>
+    </inertial>
+  </link>
+  <link name="L_RingFinger2">
+    <visual>
+      <geometry>
+        <mesh filename="IndexFinger2_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger2_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger2_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.009287 0.0 0.002"/>
+      <inertia ixx="8.41e-07" ixy="0.0" ixz="0.0" iyy="8.41e-07" iyz="0.0" izz="8.41e-07"/>
+    </inertial>
+  </link>
+  <link name="L_RingFinger3">
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0104 0.0 0.0"/>
+      <inertia ixx="8.2944e-07" ixy="0.0" ixz="0.0" iyy="8.2944e-07" iyz="0.0" izz="8.2944e-07"/>
+    </inertial>
+  </link>
+  <link name="L_RingFingerTip">
+    <visual>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="IndexFingerTip_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="IndexFingerTip_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="IndexFingerTip_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <inertia ixx="3.24e-07" ixy="0.0" ixz="0.0" iyy="3.24e-07" iyz="0.0" izz="3.24e-07"/>
+    </inertial>
+  </link>
+  <link name="L_ThumbBase">
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.00385 0.0 0.0"/>
+      <inertia ixx="2.56e-07" ixy="0.0" ixz="0.0" iyy="2.56e-07" iyz="0.0" izz="2.56e-07"/>
+    </inertial>
+  </link>
+  <link name="L_Thumb1">
+    <visual>
+      <geometry>
+        <mesh filename="L_Thumb1_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="L_Thumb1_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.015 0.0 0.0"/>
+      <inertia ixx="1.444e-06" ixy="0.0" ixz="0.0" iyy="1.444e-06" iyz="0.0" izz="1.444e-06"/>
+    </inertial>
+  </link>
+  <link name="L_Thumb2">
+    <visual>
+      <geometry>
+        <mesh filename="Thumb2_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="Thumb2_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="Thumb2_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.00875 0.0 0.002"/>
+      <inertia ixx="6.5025e-07" ixy="0.0" ixz="0.0" iyy="6.5025e-07" iyz="0.0" izz="6.5025e-07"/>
+    </inertial>
+  </link>
+  <link name="L_Thumb3">
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0099 0.0 0.0"/>
+      <inertia ixx="7.7284e-07" ixy="0.0" ixz="0.0" iyy="7.7284e-07" iyz="0.0" izz="7.7284e-07"/>
+    </inertial>
+  </link>
+  <link name="L_ThumbTip">
+    <visual>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0198 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="ThumbTip_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0198 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="ThumbTip_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0198 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="ThumbTip_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <inertia ixx="3.24e-07" ixy="0.0" ixz="0.0" iyy="3.24e-07" iyz="0.0" izz="3.24e-07"/>
+    </inertial>
+  </link>
+  <link name="PAN">
+    <inertial>
+      <mass value="0.309"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.002 0.027"/>
+      <inertia ixx="0.00029" ixy="0.0" ixz="0.0" iyy="0.00028" iyz="0.0" izz="0.00017"/>
+    </inertial>
+  </link>
+  <link name="TILT1">
+    <inertial>
+      <mass value="0.335"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.021 0.001 0.017"/>
+      <inertia ixx="0.00039" ixy="0.0" ixz="0.0" iyy="0.00052" iyz="0.0" izz="0.00045"/>
+    </inertial>
+  </link>
+  <link name="TILT2">
+    <inertial>
+      <mass value="0.061"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.012 0.0 0.012"/>
+      <inertia ixx="3.8e-05" ixy="0.0" ixz="0.0" iyy="2.1e-05" iyz="0.0" izz="3.5e-05"/>
+    </inertial>
+  </link>
+  <link name="TILT3">
+    <inertial>
+      <mass value="0.083"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.027 0.0 0.008"/>
+      <inertia ixx="4.2e-05" ixy="0.0" ixz="0.0" iyy="7.9e-05" iyz="0.0" izz="5.5e-05"/>
+    </inertial>
+  </link>
+  <link name="ROLL">
+    <visual>
+      <geometry>
+        <mesh filename="ROLL_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="ROLL_0-visual2-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="ROLL_0-visual3-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="ROLL_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.078"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.01 0.0 0.049"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.011" iyz="0.0" izz="0.011"/>
+    </inertial>
+  </link>
+  <link name="RArm_SHY">
+    <visual>
+      <geometry>
+        <mesh filename="RArm_SHY_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="RArm_SHY_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.605"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.0013 0.0462 -0.0023"/>
+      <inertia ixx="0.002635" ixy="0.0" ixz="0.0" iyy="0.0008647" iyz="0.0" izz="0.002263"/>
+    </inertial>
+  </link>
+  <link name="RArm_SHZ">
+    <visual>
+      <geometry>
+        <mesh filename="Arm_SHZ_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="Arm_SHZ_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.992"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0229 -0.001 -0.0064"/>
+      <inertia ixx="0.001368" ixy="0.0" ixz="0.0" iyy="0.002068" iyz="0.0" izz="0.00146"/>
+    </inertial>
+  </link>
+  <link name="RArm_SHX">
+    <visual>
+      <geometry>
+        <mesh filename="Arm_SHX_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="Arm_SHX_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.801"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.1178 0.0024 -0.001"/>
+      <inertia ixx="0.0004525" ixy="0.0" ixz="0.0" iyy="0.001762" iyz="0.0" izz="0.001765"/>
+    </inertial>
+  </link>
+  <link name="RArm_ELM">
+    <inertial>
+      <mass value="0.0001"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.03 0.0 -0.0209"/>
+      <inertia ixx="1e-10" ixy="0.0" ixz="0.0" iyy="1e-10" iyz="0.0" izz="1e-10"/>
+    </inertial>
+  </link>
+  <link name="RArm_EL1">
+    <visual>
+      <origin rpy="0.0 -0.0 0.0" xyz="0.01 0.0 0.007"/>
+      <geometry>
+        <mesh filename="Arm_EL1_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="Arm_EL1_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="Arm_EL1_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.093"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.03 0.0 -0.0209"/>
+      <inertia ixx="9.49e-05" ixy="0.0" ixz="0.0" iyy="6.153e-05" iyz="0.0" izz="0.0001491"/>
+    </inertial>
+  </link>
+  <link name="RArm_EL2">
+    <visual>
+      <geometry>
+        <mesh filename="Arm_EL2_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="Arm_EL2_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.112"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0139 0.0 -0.0188"/>
+      <inertia ixx="7.142e-05" ixy="0.0" ixz="0.0" iyy="6.123e-05" iyz="0.0" izz="7.21e-05"/>
+    </inertial>
+  </link>
+  <link name="RArm_WRX">
+    <visual>
+      <geometry>
+        <mesh filename="Arm_WRX_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="Arm_WRX_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.571"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0683 -0.0012 -0.0105"/>
+      <inertia ixx="0.0004874" ixy="0.0" ixz="0.0" iyy="0.0007913" iyz="0.0" izz="0.0007028"/>
+    </inertial>
+  </link>
+  <link name="RArm_WRZ">
+    <inertial>
+      <mass value="0.148"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.0001 -0.0018 0.0"/>
+      <inertia ixx="5.951e-05" ixy="0.0" ixz="0.0" iyy="1.842e-05" iyz="0.0" izz="5.973e-05"/>
+    </inertial>
+  </link>
+  <link name="RArm_WRY">
+    <inertial>
+      <mass value="0.095"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0255 0.0016 0.0001"/>
+      <inertia ixx="4.095e-05" ixy="0.0" ixz="0.0" iyy="4.879e-05" iyz="0.0" izz="5.235e-05"/>
+    </inertial>
+  </link>
+  <link name="RHand_Base">
+    <visual>
+      <geometry>
+        <mesh filename="RHand_Base_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="RHand_Base_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="RHand_Base_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="RHand_Base_0-collision3.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.15"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.035 0.0 0.015"/>
+      <inertia ixx="7.35e-05" ixy="0.0" ixz="0.0" iyy="7.35e-05" iyz="0.0" izz="7.35e-05"/>
+    </inertial>
+  </link>
+  <link name="R_IndexFingerBase">
+    <visual>
+      <geometry>
+        <mesh filename="IndexFingerBase_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFingerBase_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0055 0.0 0.0"/>
+      <inertia ixx="3.61e-07" ixy="0.0" ixz="0.0" iyy="3.61e-07" iyz="0.0" izz="3.61e-07"/>
+    </inertial>
+  </link>
+  <link name="R_IndexFinger1">
+    <visual>
+      <geometry>
+        <mesh filename="IndexFinger1_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger1_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger1_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger1_0-collision3.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.01575 0.0 0.0"/>
+      <inertia ixx="1.6e-06" ixy="0.0" ixz="0.0" iyy="1.6e-06" iyz="0.0" izz="1.6e-06"/>
+    </inertial>
+  </link>
+  <link name="R_IndexFinger2">
+    <visual>
+      <geometry>
+        <mesh filename="IndexFinger2_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger2_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger2_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0095 0.0 0.0"/>
+      <inertia ixx="8.41e-07" ixy="0.0" ixz="0.0" iyy="8.41e-07" iyz="0.0" izz="8.41e-07"/>
+    </inertial>
+  </link>
+  <link name="R_IndexFinger3">
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0104 0.0 0.0"/>
+      <inertia ixx="8.2944e-07" ixy="0.0" ixz="0.0" iyy="8.2944e-07" iyz="0.0" izz="8.2944e-07"/>
+    </inertial>
+  </link>
+  <link name="R_IndexFingerTip">
+    <visual>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="IndexFingerTip_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="IndexFingerTip_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="IndexFingerTip_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <inertia ixx="3.24e-07" ixy="0.0" ixz="0.0" iyy="3.24e-07" iyz="0.0" izz="3.24e-07"/>
+    </inertial>
+  </link>
+  <link name="R_LittleFingerBase">
+    <visual>
+      <geometry>
+        <mesh filename="LittleFingerBase_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="LittleFingerBase_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0055 0.0 0.0"/>
+      <inertia ixx="3.61e-07" ixy="0.0" ixz="0.0" iyy="3.61e-07" iyz="0.0" izz="3.61e-07"/>
+    </inertial>
+  </link>
+  <link name="R_LittleFinger1">
+    <visual>
+      <geometry>
+        <mesh filename="LittleFinger1_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="LittleFinger1_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="LittleFinger1_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="LittleFinger1_0-collision3.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.01425 0.0 0.0"/>
+      <inertia ixx="1.33225e-06" ixy="0.0" ixz="0.0" iyy="1.33225e-06" iyz="0.0" izz="1.33225e-06"/>
+    </inertial>
+  </link>
+  <link name="R_LittleFinger2">
+    <visual>
+      <geometry>
+        <mesh filename="IndexFinger2_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger2_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger2_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.009287 0.0 0.002"/>
+      <inertia ixx="8.41e-07" ixy="0.0" ixz="0.0" iyy="8.41e-07" iyz="0.0" izz="8.41e-07"/>
+    </inertial>
+  </link>
+  <link name="R_LittleFinger3">
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0104 0.0 0.0"/>
+      <inertia ixx="8.2944e-07" ixy="0.0" ixz="0.0" iyy="8.2944e-07" iyz="0.0" izz="8.2944e-07"/>
+    </inertial>
+  </link>
+  <link name="R_LittleFingerTip">
+    <visual>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="LittleFingerTip_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="LittleFingerTip_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="LittleFingerTip_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <inertia ixx="3.24e-07" ixy="0.0" ixz="0.0" iyy="3.24e-07" iyz="0.0" izz="3.24e-07"/>
+    </inertial>
+  </link>
+  <link name="R_MidFingerBase">
+    <visual>
+      <geometry>
+        <mesh filename="IndexFingerBase_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFingerBase_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0055 0.0 0.0"/>
+      <inertia ixx="3.61e-07" ixy="0.0" ixz="0.0" iyy="3.61e-07" iyz="0.0" izz="3.61e-07"/>
+    </inertial>
+  </link>
+  <link name="R_MidFinger1">
+    <visual>
+      <geometry>
+        <mesh filename="IndexFinger1_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger1_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger1_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger1_0-collision3.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.01575 0.0 0.0"/>
+      <inertia ixx="1.6e-06" ixy="0.0" ixz="0.0" iyy="1.6e-06" iyz="0.0" izz="1.6e-06"/>
+    </inertial>
+  </link>
+  <link name="R_MidFinger2">
+    <visual>
+      <geometry>
+        <mesh filename="IndexFinger2_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger2_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger2_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0095 0.0 0.0"/>
+      <inertia ixx="8.41e-07" ixy="0.0" ixz="0.0" iyy="8.41e-07" iyz="0.0" izz="8.41e-07"/>
+    </inertial>
+  </link>
+  <link name="R_MidFinger3">
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0104 0.0 0.0"/>
+      <inertia ixx="8.2944e-07" ixy="0.0" ixz="0.0" iyy="8.2944e-07" iyz="0.0" izz="8.2944e-07"/>
+    </inertial>
+  </link>
+  <link name="R_MidFingerTip">
+    <visual>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="IndexFingerTip_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="IndexFingerTip_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="IndexFingerTip_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <inertia ixx="3.24e-07" ixy="0.0" ixz="0.0" iyy="3.24e-07" iyz="0.0" izz="3.24e-07"/>
+    </inertial>
+  </link>
+  <link name="R_RingFingerBase">
+    <visual>
+      <geometry>
+        <mesh filename="IndexFingerBase_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFingerBase_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0055 0.0 0.0"/>
+      <inertia ixx="3.61e-07" ixy="0.0" ixz="0.0" iyy="3.61e-07" iyz="0.0" izz="3.61e-07"/>
+    </inertial>
+  </link>
+  <link name="R_RingFinger1">
+    <visual>
+      <geometry>
+        <mesh filename="LittleFinger1_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="LittleFinger1_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="LittleFinger1_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="LittleFinger1_0-collision3.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.01425 0.0 0.0"/>
+      <inertia ixx="1.33225e-06" ixy="0.0" ixz="0.0" iyy="1.33225e-06" iyz="0.0" izz="1.33225e-06"/>
+    </inertial>
+  </link>
+  <link name="R_RingFinger2">
+    <visual>
+      <geometry>
+        <mesh filename="IndexFinger2_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger2_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="IndexFinger2_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.009287 0.0 0.002"/>
+      <inertia ixx="8.41e-07" ixy="0.0" ixz="0.0" iyy="8.41e-07" iyz="0.0" izz="8.41e-07"/>
+    </inertial>
+  </link>
+  <link name="R_RingFinger3">
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0104 0.0 0.0"/>
+      <inertia ixx="8.2944e-07" ixy="0.0" ixz="0.0" iyy="8.2944e-07" iyz="0.0" izz="8.2944e-07"/>
+    </inertial>
+  </link>
+  <link name="R_RingFingerTip">
+    <visual>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="IndexFingerTip_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="IndexFingerTip_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0208 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="IndexFingerTip_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <inertia ixx="3.24e-07" ixy="0.0" ixz="0.0" iyy="3.24e-07" iyz="0.0" izz="3.24e-07"/>
+    </inertial>
+  </link>
+  <link name="R_ThumbBase">
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.00385 0.0 0.0"/>
+      <inertia ixx="2.56e-07" ixy="0.0" ixz="0.0" iyy="2.56e-07" iyz="0.0" izz="2.56e-07"/>
+    </inertial>
+  </link>
+  <link name="R_Thumb1">
+    <visual>
+      <geometry>
+        <mesh filename="R_Thumb1_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="R_Thumb1_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.015 0.0 0.0"/>
+      <inertia ixx="1.444e-06" ixy="0.0" ixz="0.0" iyy="1.444e-06" iyz="0.0" izz="1.444e-06"/>
+    </inertial>
+  </link>
+  <link name="R_Thumb2">
+    <visual>
+      <geometry>
+        <mesh filename="Thumb2_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="Thumb2_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="Thumb2_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.00875 0.0 0.002"/>
+      <inertia ixx="6.5025e-07" ixy="0.0" ixz="0.0" iyy="6.5025e-07" iyz="0.0" izz="6.5025e-07"/>
+    </inertial>
+  </link>
+  <link name="R_Thumb3">
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0099 0.0 0.0"/>
+      <inertia ixx="7.7284e-07" ixy="0.0" ixz="0.0" iyy="7.7284e-07" iyz="0.0" izz="7.7284e-07"/>
+    </inertial>
+  </link>
+  <link name="R_ThumbTip">
+    <visual>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0198 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="ThumbTip_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0198 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="ThumbTip_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="-0.0198 0.0 -0.001"/>
+      <geometry>
+        <mesh filename="ThumbTip_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <inertia ixx="3.24e-07" ixy="0.0" ixz="0.0" iyy="3.24e-07" iyz="0.0" izz="3.24e-07"/>
+    </inertial>
+  </link>
+  <link name="GGYRO">
+    <visual>
+      <material name="GGYRO_material">
+        <color rgba="0.1 0.4 0.7 1.0"/>
+      </material>
+      <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.02 0.02 0.02"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.02 0.02 0.02"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <inertia ixx="1e-05" ixy="0.0" ixz="0.0" iyy="1e-05" iyz="0.0" izz="1e-05"/>
+    </inertial>
+  </link>
+  <link name="LLeg_1Z">
+    <visual>
+      <geometry>
+        <mesh filename="LLeg_1Z_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="LLeg_1Z_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="LLeg_1Z_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.939"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.02883143 8.789883e-05 0.03693663"/>
+      <inertia ixx="0.002323711" ixy="0.0" ixz="0.0" iyy="0.002910023" iyz="0.0" izz="0.001336715"/>
+    </inertial>
+  </link>
+  <link name="LLeg_1X">
+    <visual>
+      <geometry>
+        <mesh filename="LLeg_1X_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="1.007"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.001131929 0.01786199 -0.0003750993"/>
+      <inertia ixx="0.001093774" ixy="0.0" ixz="0.0" iyy="0.0006008444" iyz="0.0" izz="0.001230684"/>
+    </inertial>
+  </link>
+  <link name="LLeg_1Y">
+    <visual>
+      <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 -0.266"/>
+      <geometry>
+        <mesh filename="LLeg_1Y_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 -0.266"/>
+      <geometry>
+        <mesh filename="LLeg_1Y_0-visual2-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 -0.266"/>
+      <geometry>
+        <mesh filename="LLeg_1Y_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.529"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.01315751 0.01421511 -0.1181176"/>
+      <inertia ixx="0.01341631" ixy="0.0" ixz="0.0" iyy="0.01160451" iyz="0.0" izz="0.005605485"/>
+    </inertial>
+  </link>
+  <link name="LLeg_2Y">
+    <visual>
+      <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 -0.266"/>
+      <geometry>
+        <mesh filename="LLeg_2Y_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 -0.266"/>
+      <geometry>
+        <mesh filename="LLeg_2Y_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 -0.266"/>
+      <geometry>
+        <mesh filename="LLeg_2Y_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.57"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.01915456 0.003502954 -0.1083528"/>
+      <inertia ixx="0.006490102" ixy="0.0" ixz="0.0" iyy="0.005774857" iyz="0.0" izz="0.002110927"/>
+    </inertial>
+  </link>
+  <link name="LLeg_3Y">
+    <visual>
+      <geometry>
+        <mesh filename="Leg_3Y_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="Leg_3Y_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.075"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.0187528 -0.0 0.0175434"/>
+      <inertia ixx="9.778875e-05" ixy="0.0" ixz="0.0" iyy="0.0001291064" iyz="0.0" izz="7.925461e-05"/>
+    </inertial>
+  </link>
+  <link name="LLeg_3X">
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <inertia ixx="1e-06" ixy="0.0" ixz="0.0" iyy="1e-06" iyz="0.0" izz="1e-06"/>
+    </inertial>
+  </link>
+  <link name="LLeg_6AF">
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <inertia ixx="1e-06" ixy="0.0" ixz="0.0" iyy="1e-06" iyz="0.0" izz="1e-06"/>
+    </inertial>
+  </link>
+  <link name="LLeg_FOOT">
+    <visual>
+      <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 -0.0775"/>
+      <geometry>
+        <mesh filename="LLeg_FOOT_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 -0.0775"/>
+      <geometry>
+        <mesh filename="LLeg_FOOT_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 -0.0775"/>
+      <geometry>
+        <mesh filename="LLeg_FOOT_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.747"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.004738519 0.0001931379 -0.040689"/>
+      <inertia ixx="0.001631207" ixy="0.0" ixz="0.0" iyy="0.002339391" iyz="0.0" izz="0.002610916"/>
+    </inertial>
+  </link>
+  <link name="RLeg_1Z">
+    <visual>
+      <geometry>
+        <mesh filename="RLeg_1Z_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="RLeg_1Z_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <geometry>
+        <mesh filename="RLeg_1Z_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.939"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.02883143 -8.789883e-05 0.03693663"/>
+      <inertia ixx="0.002323711" ixy="0.0" ixz="0.0" iyy="0.002910023" iyz="0.0" izz="0.001336715"/>
+    </inertial>
+  </link>
+  <link name="RLeg_1X">
+    <visual>
+      <geometry>
+        <mesh filename="RLeg_1X_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="RLeg_1X_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.007"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.001131929 -0.01786199 -0.0003750993"/>
+      <inertia ixx="0.001093774" ixy="0.0" ixz="0.0" iyy="0.0006008444" iyz="0.0" izz="0.001230684"/>
+    </inertial>
+  </link>
+  <link name="RLeg_1Y">
+    <visual>
+      <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 -0.266"/>
+      <geometry>
+        <mesh filename="RLeg_1Y_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 -0.266"/>
+      <geometry>
+        <mesh filename="RLeg_1Y_0-visual2-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 -0.266"/>
+      <geometry>
+        <mesh filename="RLeg_1Y_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.529"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.01315751 -0.01421511 -0.1181176"/>
+      <inertia ixx="0.01341631" ixy="0.0" ixz="0.0" iyy="0.01160451" iyz="0.0" izz="0.005605485"/>
+    </inertial>
+  </link>
+  <link name="RLeg_2Y">
+    <visual>
+      <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 -0.266"/>
+      <geometry>
+        <mesh filename="RLeg_2Y_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 -0.266"/>
+      <geometry>
+        <mesh filename="RLeg_2Y_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 -0.266"/>
+      <geometry>
+        <mesh filename="RLeg_2Y_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.57"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.01915456 -0.003502954 -0.1083528"/>
+      <inertia ixx="0.006490102" ixy="0.0" ixz="0.0" iyy="0.005774857" iyz="0.0" izz="0.002110927"/>
+    </inertial>
+  </link>
+  <link name="RLeg_3Y">
+    <visual>
+      <geometry>
+        <mesh filename="Leg_3Y_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="Leg_3Y_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.075"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.0187528 0.0 0.0175434"/>
+      <inertia ixx="9.778875e-05" ixy="0.0" ixz="0.0" iyy="0.0001291064" iyz="0.0" izz="7.925461e-05"/>
+    </inertial>
+  </link>
+  <link name="RLeg_3X">
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <inertia ixx="1e-06" ixy="0.0" ixz="0.0" iyy="1e-06" iyz="0.0" izz="1e-06"/>
+    </inertial>
+  </link>
+  <link name="RLeg_6AF">
+    <inertial>
+      <mass value="0.01"/>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <inertia ixx="1e-06" ixy="0.0" ixz="0.0" iyy="1e-06" iyz="0.0" izz="1e-06"/>
+    </inertial>
+  </link>
+  <link name="RLeg_FOOT">
+    <visual>
+      <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 -0.0775"/>
+      <geometry>
+        <mesh filename="RLeg_FOOT_0-visual1-lod2.DAE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 -0.0775"/>
+      <geometry>
+        <mesh filename="RLeg_FOOT_0-collision1.DAE"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 -0.0775"/>
+      <geometry>
+        <mesh filename="RLeg_FOOT_0-collision2.DAE"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.747"/>
+      <origin rpy="0.0 0.0 0.0" xyz="-0.004738519 -0.0001931379 -0.040689"/>
+      <inertia ixx="0.001631207" ixy="0.0" ixz="0.0" iyy="0.002339391" iyz="0.0" izz="0.002610916"/>
+    </inertial>
+  </link>
+  <joint name="BY_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.06 0.0 0.15" rpy="0.0 0.0 0.0"/>
+    <parent link="WAIST"/>
+    <child link="BY"/>
+  </joint>
+  <joint name="BZ_joint" type="revolute">
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.436332312999" upper="0.436332312999" effort="500" velocity="100"/>
+    <origin xyz="-0.08 0.0 0.03250003" rpy="0.0 0.0 0.0"/>
+    <parent link="BY"/>
+    <child link="CHEST"/>
+  </joint>
+  <joint name="LArm_SHY_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.72787595947" upper="2.77507351067" effort="500" velocity="100"/>
+    <origin xyz="0.04 0.17 0.234" rpy="0.3490659127973758 -0.0 0.0"/>
+    <parent link="CHEST"/>
+    <child link="LArm_SHY"/>
+  </joint>
+  <joint name="LArm_SHZ_joint" type="revolute">
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.226892802759" upper="1.4835298642" effort="500" velocity="100"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <parent link="LArm_SHY"/>
+    <child link="LArm_SHZ"/>
+  </joint>
+  <joint name="LArm_SHX_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit lower="-1.64060949687" upper="1.64060949687" effort="500" velocity="100"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <parent link="LArm_SHZ"/>
+    <child link="LArm_SHX"/>
+  </joint>
+  <joint name="LArm_ELM_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-2.39110107523" upper="-0.244346095279" effort="500" velocity="100"/>
+    <origin xyz="0.16 1.587784e-09 0.007" rpy="-1.6045987794776685e-18 -1.7392595738821134e-05 1.8451515846546992e-13"/>
+    <parent link="LArm_SHX"/>
+    <child link="LArm_ELM"/>
+  </joint>
+  <joint name="LArm_EL1_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-0.0174532925199" upper="1.30534850273" effort="500" velocity="100"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <parent link="LArm_ELM"/>
+    <child link="LArm_EL1"/>
+    <mimic joint="LArm_ELM_joint" multiplier="-0.38671" offset="-1.739259697155166e-05"/>
+  </joint>
+  <joint name="LArm_EL2_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.39187040787" upper="0.0174532925199" effort="500" velocity="100"/>
+    <origin xyz="0.054043 1.269468e-08 0.007041047" rpy="-5.70125581341757e-18 3.4349963431618825e-05 -3.428628343842024e-13"/>
+    <parent link="LArm_EL1"/>
+    <child link="LArm_EL2"/>
+    <mimic joint="LArm_ELM_joint" multiplier="2.400873105074569e-01" offset="3.434995647803795e-05"/>
+  </joint>
+  <joint name="LArm_WRX_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit lower="-2.77507351067" upper="2.25147473507" effort="500" velocity="100"/>
+    <origin xyz="0.141457 -6.913041e-10 -0.01404099" rpy="-1.5707963267948966 -1.6199122423815246e-12 -3.629551240286649e-13"/>
+    <parent link="LArm_EL2"/>
+    <child link="LArm_WRX"/>
+  </joint>
+  <joint name="LArm_WRZ_joint" type="revolute">
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.680678408278" upper="0.680678408278" effort="500" velocity="100"/>
+    <origin xyz="5.551115e-17 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <parent link="LArm_WRX"/>
+    <child link="LArm_WRZ"/>
+  </joint>
+  <joint name="LArm_WRY_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-0.680678408278" upper="0.680678408278" effort="500" velocity="100"/>
+    <origin xyz="5.551115e-17 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <parent link="LArm_WRZ"/>
+    <child link="LArm_WRY"/>
+  </joint>
+  <joint name="LArm_6AF_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.03978 -1.898481e-14 -2.731149e-14" rpy="0.0 -0.0 0.0"/>
+    <parent link="LArm_WRY"/>
+    <child link="LHand_Base"/>
+  </joint>
+  <joint name="L_IndexFinger_1Z_joint" type="revolute">
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.261799387799" upper="0.174532925199" effort="500" velocity="100"/>
+    <origin xyz="0.058 -0.028 0.02657" rpy="2.2187908965381725e-16 0.52359870207514 5.755642814915114e-17"/>
+    <parent link="LHand_Base"/>
+    <child link="L_IndexFingerBase"/>
+  </joint>
+  <joint name="L_IndexFinger_1Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="1.57079632679" effort="500" velocity="100"/>
+    <origin xyz="0.011 -6.057811e-10 4.241438e-10" rpy="-3.0042430116095874e-17 -0.7853982050143141 7.252883796422994e-17"/>
+    <parent link="L_IndexFingerBase"/>
+    <child link="L_IndexFinger1"/>
+  </joint>
+  <joint name="L_IndexFinger_2Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="1.2217304764" effort="500" velocity="100"/>
+    <origin xyz="0.0315 8.979016e-10 -6.288036e-10" rpy="-2.097141881915526e-16 -0.21205752972945638 3.627560263599312e-17"/>
+    <parent link="L_IndexFinger1"/>
+    <child link="L_IndexFinger2"/>
+  </joint>
+  <joint name="L_IndexFinger_Slave_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-inf" upper="inf" effort="500" velocity="100"/>
+    <origin xyz="0.019 9.548931e-10 -6.686733e-10" rpy="-1.3815587069040519e-16 0.21205752972945638 1.3208695285514197e-17"/>
+    <parent link="L_IndexFinger2"/>
+    <child link="L_IndexFinger3"/>
+    <mimic joint="L_IndexFinger_2Y_joint" multiplier="1.0775" offset="0"/>
+  </joint>
+  <joint name="L_IndexFinger_6AF_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.0208 5.891467e-10 0.0009999994" rpy="0.0 -0.0 0.0"/>
+    <parent link="L_IndexFinger3"/>
+    <child link="L_IndexFingerTip"/>
+  </joint>
+  <joint name="L_LittleFinger_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.05271 0.030145 0.02514" rpy="0.020261031609209026 0.5325888848154237 0.28539348000750353"/>
+    <parent link="LHand_Base"/>
+    <child link="L_LittleFingerBase"/>
+  </joint>
+  <joint name="L_LittleFinger_1Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="1.57079632679" effort="500" velocity="100"/>
+    <origin xyz="0.011 -6.717162e-10 9.204482e-11" rpy="-2.4394579465525666e-16 -0.7853982050143141 1.6113051780825013e-16"/>
+    <parent link="L_LittleFingerBase"/>
+    <child link="L_LittleFinger1"/>
+  </joint>
+  <joint name="L_LittleFinger_2Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="1.0471975512" effort="500" velocity="100"/>
+    <origin xyz="0.0285 1.354716e-10 -1.029261e-09" rpy="5.87177429241752e-17 -0.21205752972945638 -2.7183450014148498e-17"/>
+    <parent link="L_LittleFinger1"/>
+    <child link="L_LittleFinger2"/>
+  </joint>
+  <joint name="L_LittleFinger_Slave_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-inf" upper="inf" effort="500" velocity="100"/>
+    <origin xyz="0.019 4.007789e-10 -8.625466e-10" rpy="-1.6488564466181705e-16 0.21205752972945638 2.432005826351302e-17"/>
+    <parent link="L_LittleFinger2"/>
+    <child link="L_LittleFinger3"/>
+    <mimic joint="L_LittleFinger_2Y_joint" multiplier="1.0775" offset="0"/>
+  </joint>
+  <joint name="L_LittleFinger_6AF_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.0208 9.728096e-11 0.0009999991" rpy="0.0 -0.0 0.0"/>
+    <parent link="L_LittleFinger3"/>
+    <child link="L_LittleFingerTip"/>
+  </joint>
+  <joint name="L_MidFinger_1Z_joint" type="revolute">
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.174532925199" upper="0.174532925199" effort="500" velocity="100"/>
+    <origin xyz="0.06124 -0.008 0.02743" rpy="2.2187908965381725e-16 0.52359870207514 5.755642814915114e-17"/>
+    <parent link="LHand_Base"/>
+    <child link="L_MidFingerBase"/>
+  </joint>
+  <joint name="L_MidFinger_1Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="1.57079632679" effort="500" velocity="100"/>
+    <origin xyz="0.011 -6.057813e-10 4.241438e-10" rpy="-3.0042430116095874e-17 -0.7853982050143141 7.252883796422994e-17"/>
+    <parent link="L_MidFingerBase"/>
+    <child link="L_MidFinger1"/>
+  </joint>
+  <joint name="L_MidFinger_2Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="1.2217304764" effort="500" velocity="100"/>
+    <origin xyz="0.0315 8.979016e-10 -6.288036e-10" rpy="-2.097141881915526e-16 -0.21205752972945638 3.627560263599312e-17"/>
+    <parent link="L_MidFinger1"/>
+    <child link="L_MidFinger2"/>
+  </joint>
+  <joint name="L_MidFinger_Slave_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-inf" upper="inf" effort="500" velocity="100"/>
+    <origin xyz="0.019 9.548931e-10 -6.686734e-10" rpy="-1.3815587069040519e-16 0.21205752972945638 1.3208695285514197e-17"/>
+    <parent link="L_MidFinger2"/>
+    <child link="L_MidFinger3"/>
+    <mimic joint="L_MidFinger_2Y_joint" multiplier="1.0775" offset="0.0"/>
+  </joint>
+  <joint name="L_MidFinger_6AF_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.0208 5.89147e-10 0.0009999994" rpy="0.0 -0.0 0.0"/>
+    <parent link="L_MidFinger3"/>
+    <child link="L_MidFingerTip"/>
+  </joint>
+  <joint name="L_RingFinger_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.05845 0.011132 0.02668" rpy="0.04561673427242085 0.5270097704059056 0.21391131815857847"/>
+    <parent link="LHand_Base"/>
+    <child link="L_RingFingerBase"/>
+  </joint>
+  <joint name="L_RingFinger_1Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="1.57079632679" effort="500" velocity="100"/>
+    <origin xyz="0.011 -1.671797e-10 4.355893e-11" rpy="-1.779222596139908e-16 -0.7853981284776206 7.369780934068207e-17"/>
+    <parent link="L_RingFingerBase"/>
+    <child link="L_RingFinger1"/>
+  </joint>
+  <joint name="L_RingFinger_2Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="1.0471975512" effort="500" velocity="100"/>
+    <origin xyz="0.0285 7.892764e-11 -2.306367e-10" rpy="-4.053343246382838e-18 -0.21205750856341363 -2.7480941343966102e-17"/>
+    <parent link="L_RingFinger1"/>
+    <child link="L_RingFinger2"/>
+  </joint>
+  <joint name="L_RingFinger_Slave_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-inf" upper="inf" effort="500" velocity="100"/>
+    <origin xyz="0.019 1.384554e-10 -2.050702e-10" rpy="3.529012496889755e-18 0.21205750856341363 3.755853103341165e-19"/>
+    <parent link="L_RingFinger2"/>
+    <child link="L_RingFinger3"/>
+    <mimic joint="L_RingFinger_2Y_joint" multiplier="1.0775" offset="0.0"/>
+  </joint>
+  <joint name="L_RingFinger_6AF_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.0208 5.684608e-11 0.0009999998" rpy="0.0 -0.0 0.0"/>
+    <parent link="L_RingFinger3"/>
+    <child link="L_RingFingerTip"/>
+  </joint>
+  <joint name="L_Thumb_1Z_joint" type="revolute">
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.610865238198" upper="0.698131700798" effort="500" velocity="100"/>
+    <origin xyz="0.01293 -0.017 -0.000612" rpy="3.141592653589793 1.0471975549810366 -4.837345154723251e-17"/>
+    <parent link="LHand_Base"/>
+    <child link="L_ThumbBase"/>
+  </joint>
+  <joint name="L_Thumb_1Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="0.959931088597" effort="500" velocity="100"/>
+    <origin xyz="0.0077 -3.109811e-10 -4.441412e-10" rpy="-1.3285270570808817e-16 -0.4363322888652251 8.631167850977196e-17"/>
+    <parent link="L_ThumbBase"/>
+    <child link="L_Thumb1"/>
+  </joint>
+  <joint name="L_Thumb_2Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="1.57079632679" effort="500" velocity="100"/>
+    <origin xyz="0.03 -1.393737e-09 -1.990502e-09" rpy="-1.3117304087230864e-17 -0.2305579256136589 1.1328299538715195e-16"/>
+    <parent link="L_Thumb1"/>
+    <child link="L_Thumb2"/>
+  </joint>
+  <joint name="L_Thumb_Slave_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-inf" upper="inf" effort="500" velocity="100"/>
+    <origin xyz="0.0175 -8.077556e-10 -1.153613e-09" rpy="1.1328299538715195e-16 0.2305579256136589 1.3117304087230864e-17"/>
+    <parent link="L_Thumb2"/>
+    <child link="L_Thumb3"/>
+    <mimic joint="L_Thumb_2Y_joint" multiplier="1.1155" offset="0.0"/>
+  </joint>
+  <joint name="L_Thumb_6AF_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.0198 -8.772947e-10 0.0009999986" rpy="0.0 -0.0 0.0"/>
+    <parent link="L_Thumb3"/>
+    <child link="L_ThumbTip"/>
+  </joint>
+  <joint name="PAN_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.04 0.0 0.234" rpy="0.0 0.0 0.0"/>
+    <parent link="CHEST"/>
+    <child link="PAN"/>
+  </joint>
+  <joint name="TILT1_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.012 0.0 0.06324005" rpy="0.0 0.0 0.0"/>
+    <parent link="PAN"/>
+    <child link="TILT1"/>
+  </joint>
+  <joint name="TILT2_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.01742593 0.0 0.06158185" rpy="0.0 0.0 0.0"/>
+    <parent link="TILT1"/>
+    <child link="TILT2"/>
+  </joint>
+  <joint name="TILT3_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.001896325 0.0 -0.02492797" rpy="0.0 0.0 0.0"/>
+    <parent link="TILT2"/>
+    <child link="TILT3"/>
+  </joint>
+  <joint name="ROLL_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="-0.03132225 0.0 0.02844131" rpy="0.0 0.0 0.0"/>
+    <parent link="TILT3"/>
+    <child link="ROLL"/>
+  </joint>
+  <joint name="RArm_SHY_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.72787595947" upper="2.77507351067" effort="500" velocity="100"/>
+    <origin xyz="0.04 -0.17 0.234" rpy="-0.3490659127973758 0.0 0.0"/>
+    <parent link="CHEST"/>
+    <child link="RArm_SHY"/>
+  </joint>
+  <joint name="RArm_SHZ_joint" type="revolute">
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.4835298642" upper="0.226892802759" effort="500" velocity="100"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <parent link="RArm_SHY"/>
+    <child link="RArm_SHZ"/>
+  </joint>
+  <joint name="RArm_SHX_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit lower="-1.64060949687" upper="1.64060949687" effort="500" velocity="100"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <parent link="RArm_SHZ"/>
+    <child link="RArm_SHX"/>
+  </joint>
+  <joint name="RArm_ELM_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-2.39110107523" upper="-0.244346095279" effort="500" velocity="100"/>
+    <origin xyz="0.16 -1.587784e-09 0.007" rpy="1.6045987794776685e-18 -1.7392595738821134e-05 -1.8451515846546992e-13"/>
+    <parent link="RArm_SHX"/>
+    <child link="RArm_ELM"/>
+  </joint>
+  <joint name="RArm_EL1_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-0.0174532925199" upper="1.30534850273" effort="500" velocity="100"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <parent link="RArm_ELM"/>
+    <child link="RArm_EL1"/>
+    <mimic joint="RArm_ELM_joint" multiplier="-0.38671" offset="-1.739259697155166e-05"/>
+  </joint>
+  <joint name="RArm_EL2_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.39187040787" upper="0.0174532925199" effort="500" velocity="100"/>
+    <origin xyz="0.054043 -1.269468e-08 0.007041047" rpy="5.70125581341757e-18 3.4349963431618825e-05 3.428628343842024e-13"/>
+    <parent link="RArm_EL1"/>
+    <child link="RArm_EL2"/>
+    <mimic joint="RArm_ELM_joint" multiplier="2.400873105074569e-01" offset="3.434995647803795e-05"/>
+  </joint>
+  <joint name="RArm_WRX_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit lower="-2.25147473507" upper="2.77507351067" effort="500" velocity="100"/>
+    <origin xyz="0.141457 6.913041e-10 -0.01404099" rpy="1.5707963267948966 -1.6199122423815246e-12 3.629551240286649e-13"/>
+    <parent link="RArm_EL2"/>
+    <child link="RArm_WRX"/>
+  </joint>
+  <joint name="RArm_WRZ_joint" type="revolute">
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.680678408278" upper="0.680678408278" effort="500" velocity="100"/>
+    <origin xyz="5.551115e-17 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <parent link="RArm_WRX"/>
+    <child link="RArm_WRZ"/>
+  </joint>
+  <joint name="RArm_WRY_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-0.680678408278" upper="0.680678408278" effort="500" velocity="100"/>
+    <origin xyz="5.551115e-17 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <parent link="RArm_WRZ"/>
+    <child link="RArm_WRY"/>
+  </joint>
+  <joint name="RArm_6AF_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.03978 1.898481e-14 -2.731149e-14" rpy="0.0 -0.0 0.0"/>
+    <parent link="RArm_WRY"/>
+    <child link="RHand_Base"/>
+  </joint>
+  <joint name="R_IndexFinger_1Z_joint" type="revolute">
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.174532925199" upper="0.261799387799" effort="500" velocity="100"/>
+    <origin xyz="0.058 0.028 0.02657" rpy="-2.2187908965381725e-16 0.52359870207514 -5.755642814915114e-17"/>
+    <parent link="RHand_Base"/>
+    <child link="R_IndexFingerBase"/>
+  </joint>
+  <joint name="R_IndexFinger_1Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="1.57079632679" effort="500" velocity="100"/>
+    <origin xyz="0.011 6.057811e-10 4.241438e-10" rpy="3.0042430116095874e-17 -0.7853982050143141 -7.252883796422994e-17"/>
+    <parent link="R_IndexFingerBase"/>
+    <child link="R_IndexFinger1"/>
+  </joint>
+  <joint name="R_IndexFinger_2Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="1.2217304764" effort="500" velocity="100"/>
+    <origin xyz="0.0315 -8.979016e-10 -6.288036e-10" rpy="2.097141881915526e-16 -0.21205752972945638 -3.627560263599312e-17"/>
+    <parent link="R_IndexFinger1"/>
+    <child link="R_IndexFinger2"/>
+  </joint>
+  <joint name="R_IndexFinger_Slave_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-inf" upper="inf" effort="500" velocity="100"/>
+    <origin xyz="0.019 -9.548931e-10 -6.686733e-10" rpy="1.3815587069040519e-16 0.21205752972945638 -1.3208695285514197e-17"/>
+    <parent link="R_IndexFinger2"/>
+    <child link="R_IndexFinger3"/>
+    <mimic joint="R_IndexFinger_2Y_joint" multiplier="1.0775" offset="0"/>
+  </joint>
+  <joint name="R_IndexFinger_6AF_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.0208 -5.891467e-10 0.0009999994" rpy="0.0 -0.0 0.0"/>
+    <parent link="R_IndexFinger3"/>
+    <child link="R_IndexFingerTip"/>
+  </joint>
+  <joint name="R_LittleFinger_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.05271 -0.030145 0.02514" rpy="-0.020261031609209026 0.5325888848154237 -0.28539348000750353"/>
+    <parent link="RHand_Base"/>
+    <child link="R_LittleFingerBase"/>
+  </joint>
+  <joint name="R_LittleFinger_1Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="1.57079632679" effort="500" velocity="100"/>
+    <origin xyz="0.011 6.717162e-10 9.204482e-11" rpy="2.4394579465525666e-16 -0.7853982050143141 -1.6113051780825013e-16"/>
+    <parent link="R_LittleFingerBase"/>
+    <child link="R_LittleFinger1"/>
+  </joint>
+  <joint name="R_LittleFinger_2Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="1.0471975512" effort="500" velocity="100"/>
+    <origin xyz="0.0285 -1.354716e-10 -1.029261e-09" rpy="-5.87177429241752e-17 -0.21205752972945638 2.7183450014148498e-17"/>
+    <parent link="R_LittleFinger1"/>
+    <child link="R_LittleFinger2"/>
+  </joint>
+  <joint name="R_LittleFinger_Slave_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-inf" upper="inf" effort="500" velocity="100"/>
+    <origin xyz="0.019 -4.007789e-10 -8.625466e-10" rpy="1.6488564466181705e-16 0.21205752972945638 -2.432005826351302e-17"/>
+    <parent link="R_LittleFinger2"/>
+    <child link="R_LittleFinger3"/>
+    <mimic joint="R_LittleFinger_2Y_joint" multiplier="1.0775" offset="0"/>
+  </joint>
+  <joint name="R_LittleFinger_6AF_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.0208 -9.728096e-11 0.0009999991" rpy="0.0 -0.0 0.0"/>
+    <parent link="R_LittleFinger3"/>
+    <child link="R_LittleFingerTip"/>
+  </joint>
+  <joint name="R_MidFinger_1Z_joint" type="revolute">
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.174532925199" upper="0.174532925199" effort="500" velocity="100"/>
+    <origin xyz="0.06124 0.008 0.02743" rpy="-2.2187908965381725e-16 0.52359870207514 -5.755642814915114e-17"/>
+    <parent link="RHand_Base"/>
+    <child link="R_MidFingerBase"/>
+  </joint>
+  <joint name="R_MidFinger_1Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="1.57079632679" effort="500" velocity="100"/>
+    <origin xyz="0.011 6.057813e-10 4.241438e-10" rpy="3.0042430116095874e-17 -0.7853982050143141 -7.252883796422994e-17"/>
+    <parent link="R_MidFingerBase"/>
+    <child link="R_MidFinger1"/>
+  </joint>
+  <joint name="R_MidFinger_2Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="1.2217304764" effort="500" velocity="100"/>
+    <origin xyz="0.0315 -8.979016e-10 -6.288036e-10" rpy="2.097141881915526e-16 -0.21205752972945638 -3.627560263599312e-17"/>
+    <parent link="R_MidFinger1"/>
+    <child link="R_MidFinger2"/>
+  </joint>
+  <joint name="R_MidFinger_Slave_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-inf" upper="inf" effort="500" velocity="100"/>
+    <origin xyz="0.019 -9.548931e-10 -6.686734e-10" rpy="1.3815587069040519e-16 0.21205752972945638 -1.3208695285514197e-17"/>
+    <parent link="R_MidFinger2"/>
+    <child link="R_MidFinger3"/>
+    <mimic joint="R_MidFinger_2Y_joint" multiplier="1.0775" offset="0"/>
+  </joint>
+  <joint name="R_MidFinger_6AF_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.0208 -5.89147e-10 0.0009999994" rpy="0.0 -0.0 0.0"/>
+    <parent link="R_MidFinger3"/>
+    <child link="R_MidFingerTip"/>
+  </joint>
+  <joint name="R_RingFinger_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.05845 -0.011132 0.02668" rpy="-0.04561673427242085 0.5270097704059056 -0.21391131815857847"/>
+    <parent link="RHand_Base"/>
+    <child link="R_RingFingerBase"/>
+  </joint>
+  <joint name="R_RingFinger_1Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="1.57079632679" effort="500" velocity="100"/>
+    <origin xyz="0.011 1.671797e-10 4.355893e-11" rpy="1.779222596139908e-16 -0.7853981284776206 -7.369780934068207e-17"/>
+    <parent link="R_RingFingerBase"/>
+    <child link="R_RingFinger1"/>
+  </joint>
+  <joint name="R_RingFinger_2Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="1.0471975512" effort="500" velocity="100"/>
+    <origin xyz="0.0285 -7.892764e-11 -2.306367e-10" rpy="4.053343246382838e-18 -0.21205750856341363 2.7480941343966102e-17"/>
+    <parent link="R_RingFinger1"/>
+    <child link="R_RingFinger2"/>
+  </joint>
+  <joint name="R_RingFinger_Slave_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-inf" upper="inf" effort="500" velocity="100"/>
+    <origin xyz="0.019 -1.384554e-10 -2.050702e-10" rpy="-3.529012496889755e-18 0.21205750856341363 -3.755853103341165e-19"/>
+    <parent link="R_RingFinger2"/>
+    <child link="R_RingFinger3"/>
+    <mimic joint="R_RingFinger_2Y_joint" multiplier="1.0775" offset="0"/>
+  </joint>
+  <joint name="R_RingFinger_6AF_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.0208 -5.684608e-11 0.0009999998" rpy="0.0 -0.0 0.0"/>
+    <parent link="R_RingFinger3"/>
+    <child link="R_RingFingerTip"/>
+  </joint>
+  <joint name="R_Thumb_1Z_joint" type="revolute">
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.698131700798" upper="0.610865238198" effort="500" velocity="100"/>
+    <origin xyz="0.01293 0.017 -0.000612" rpy="3.141592653589793 1.0471975549810366 1.8625149331097766e-17"/>
+    <parent link="RHand_Base"/>
+    <child link="R_ThumbBase"/>
+  </joint>
+  <joint name="R_Thumb_1Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="0.959931088597" effort="500" velocity="100"/>
+    <origin xyz="0.0077 3.109811e-10 -4.441409e-10" rpy="5.979792373968305e-17 -0.4363322888652251 -1.3256879773191228e-17"/>
+    <parent link="R_ThumbBase"/>
+    <child link="R_Thumb1"/>
+  </joint>
+  <joint name="R_Thumb_2Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="1.57079632679" effort="500" velocity="100"/>
+    <origin xyz="0.03 1.393737e-09 -1.990502e-09" rpy="6.558653225117176e-18 -0.2305579256136589 -5.664150789720133e-17"/>
+    <parent link="R_Thumb1"/>
+    <child link="R_Thumb2"/>
+  </joint>
+  <joint name="R_Thumb_Slave_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-inf" upper="inf" effort="500" velocity="100"/>
+    <origin xyz="0.0175 8.077554e-10 -1.153613e-09" rpy="-5.664150789720133e-17 0.2305579256136589 -6.558653225117176e-18"/>
+    <parent link="R_Thumb2"/>
+    <child link="R_Thumb3"/>
+    <mimic joint="R_Thumb_2Y_joint" multiplier="1.1155" offset="0"/>
+  </joint>
+  <joint name="R_Thumb_6AF_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.0198 8.772949e-10 0.0009999986" rpy="0.0 -0.0 0.0"/>
+    <parent link="R_Thumb3"/>
+    <child link="R_ThumbTip"/>
+  </joint>
+  <joint name="GGYRO_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.06 0.0 0.16365" rpy="0.0 0.0 0.0"/>
+    <parent link="WAIST"/>
+    <child link="GGYRO"/>
+  </joint>
+  <joint name="LLeg_1Z_joint" type="revolute">
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.855211333477" upper="0.907571211037" effort="500" velocity="100"/>
+    <origin xyz="0.0 0.08 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="WAIST"/>
+    <child link="LLeg_1Z"/>
+  </joint>
+  <joint name="LLeg_1X_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit lower="-0.331612557879" upper="0.506145483078" effort="500" velocity="100"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="LLeg_1Z"/>
+    <child link="LLeg_1X"/>
+  </joint>
+  <joint name="LLeg_1Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.62315620435" upper="0.558505360638" effort="500" velocity="100"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="LLeg_1X"/>
+    <child link="LLeg_1Y"/>
+  </joint>
+  <joint name="LLeg_2Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-0.0174532925199" upper="2.19911485751" effort="500" velocity="100"/>
+    <origin xyz="0.0 0.0 -0.266" rpy="0.0 0.0 0.0"/>
+    <parent link="LLeg_1Y"/>
+    <child link="LLeg_2Y"/>
+  </joint>
+  <joint name="LLeg_3Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.308996939" upper="0.471238898038" effort="500" velocity="100"/>
+    <origin xyz="0.0 0.0 -0.266" rpy="0.0 0.0 0.0"/>
+    <parent link="LLeg_2Y"/>
+    <child link="LLeg_3Y"/>
+  </joint>
+  <joint name="LLeg_3X_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit lower="-0.514872129338" upper="0.514872129338" effort="500" velocity="100"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="LLeg_3Y"/>
+    <child link="LLeg_3X"/>
+  </joint>
+  <joint name="LLeg_6AF_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.0 0.0 -0.044" rpy="0.0 0.0 0.0"/>
+    <parent link="LLeg_3X"/>
+    <child link="LLeg_6AF"/>
+  </joint>
+  <joint name="LLeg_FOOT_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.0 0.0 0.044" rpy="0.0 0.0 -0.052359882250491756"/>
+    <parent link="LLeg_6AF"/>
+    <child link="LLeg_FOOT"/>
+  </joint>
+  <joint name="RLeg_1Z_joint" type="revolute">
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.907571211037" upper="0.855211333477" effort="500" velocity="100"/>
+    <origin xyz="0.0 -0.08 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="WAIST"/>
+    <child link="RLeg_1Z"/>
+  </joint>
+  <joint name="RLeg_1X_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit lower="-0.506145483078" upper="0.331612557879" effort="500" velocity="100"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="RLeg_1Z"/>
+    <child link="RLeg_1X"/>
+  </joint>
+  <joint name="RLeg_1Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.62315620435" upper="0.558505360638" effort="500" velocity="100"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="RLeg_1X"/>
+    <child link="RLeg_1Y"/>
+  </joint>
+  <joint name="RLeg_2Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-0.0174532925199" upper="2.19911485751" effort="500" velocity="100"/>
+    <origin xyz="0.0 0.0 -0.266" rpy="0.0 0.0 0.0"/>
+    <parent link="RLeg_1Y"/>
+    <child link="RLeg_2Y"/>
+  </joint>
+  <joint name="RLeg_3Y_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.308996939" upper="0.471238898038" effort="500" velocity="100"/>
+    <origin xyz="0.0 0.0 -0.266" rpy="0.0 0.0 0.0"/>
+    <parent link="RLeg_2Y"/>
+    <child link="RLeg_3Y"/>
+  </joint>
+  <joint name="RLeg_3X_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit lower="-0.514872129338" upper="0.514872129338" effort="500" velocity="100"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="RLeg_3Y"/>
+    <child link="RLeg_3X"/>
+  </joint>
+  <joint name="RLeg_6AF_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.0 0.0 -0.044" rpy="0.0 0.0 0.0"/>
+    <parent link="RLeg_3X"/>
+    <child link="RLeg_6AF"/>
+  </joint>
+  <joint name="RLeg_FOOT_joint" type="revolute">
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <origin xyz="0.0 0.0 0.044" rpy="0.0 -0.0 0.052359882250491756"/>
+    <parent link="RLeg_6AF"/>
+    <child link="RLeg_FOOT"/>
+  </joint>
+  <link name="world"/>
+  <joint name="world_to_base" type="fixed">
+    <parent link="world"/>
+    <child link="WAIST"/>
+  </joint>
+
+<transmission name="BZ_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="BZ_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="BZ_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="BY_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="BY_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="BY_FIXED"/>
+  </transmission>
+  <transmission name="LArm_SHY_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LArm_SHY_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LArm_SHY_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="LArm_SHZ_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LArm_SHZ_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LArm_SHZ_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="LArm_SHX_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LArm_SHX_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LArm_SHX_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="LArm_ELM_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LArm_ELM_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LArm_ELM_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="LArm_WRX_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LArm_WRX_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LArm_WRX_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="LArm_WRZ_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LArm_WRZ_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LArm_WRZ_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="LArm_WRY_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LArm_WRY_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LArm_WRY_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="LArm_6AF_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LArm_6AF_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LArm_6AF_FIXD"/>
+  </transmission>
+  <transmission name="L_IndexFinger_1Z_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="L_IndexFinger_1Z_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="L_IndexFinger_1Z_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="L_IndexFinger_1Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="L_IndexFinger_1Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="L_IndexFinger_1Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="L_IndexFinger_2Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="L_IndexFinger_2Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="L_IndexFinger_2Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="L_IndexFinger_6AF_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="L_IndexFinger_6AF_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="L_IndexFinger_6AF_FIXED"/>
+  </transmission>
+  <transmission name="L_LittleFinger_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="L_LittleFinger_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="L_LittleFinger_FIXED"/>
+  </transmission>
+  <transmission name="L_LittleFinger_1Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="L_LittleFinger_1Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="L_LittleFinger_1Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="L_LittleFinger_2Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="L_LittleFinger_2Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="L_LittleFinger_2Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="L_LittleFinger_6AF_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="L_LittleFinger_6AF_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="L_LittleFinger_6AF_FIXED"/>
+  </transmission>
+  <transmission name="L_MidFinger_1Z_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="L_MidFinger_1Z_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="L_MidFinger_1Z_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="L_MidFinger_1Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="L_MidFinger_1Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="L_MidFinger_1Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="L_MidFinger_2Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="L_MidFinger_2Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="L_MidFinger_2Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="L_MidFinger_6AF_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="L_MidFinger_6AF_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="L_MidFinger_6AF_FIXED"/>
+  </transmission>
+  <transmission name="L_RingFinger_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="L_RingFinger_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="L_RingFinger_FIXED"/>
+  </transmission>
+  <transmission name="L_RingFinger_1Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="L_RingFinger_1Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="L_RingFinger_1Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="L_RingFinger_2Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="L_RingFinger_2Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="L_RingFinger_2Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="L_RingFinger_6AF_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="L_RingFinger_6AF_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="L_RingFinger_6AF_FIXED"/>
+  </transmission>
+  <transmission name="L_Thumb_1Z_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="L_Thumb_1Z_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="L_Thumb_1Z_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="L_Thumb_1Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="L_Thumb_1Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="L_Thumb_1Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="L_Thumb_2Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="L_Thumb_2Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="L_Thumb_2Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="L_Thumb_6AF_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="L_Thumb_6AF_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="L_Thumb_6AF_FIXED"/>
+  </transmission>
+  <transmission name="RArm_SHY_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RArm_SHY_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RArm_SHY_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="RArm_SHZ_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RArm_SHZ_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RArm_SHZ_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="RArm_SHX_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RArm_SHX_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RArm_SHX_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="RArm_ELM_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RArm_ELM_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RArm_ELM_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="RArm_WRX_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RArm_WRX_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RArm_WRX_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="RArm_WRZ_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RArm_WRZ_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RArm_WRZ_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="RArm_WRY_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RArm_WRY_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RArm_WRY_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="RArm_6AF_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RArm_6AF_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RArm_6AF_FIXD"/>
+  </transmission>
+  <transmission name="R_IndexFinger_1Z_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="R_IndexFinger_1Z_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="R_IndexFinger_1Z_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="R_IndexFinger_1Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="R_IndexFinger_1Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="R_IndexFinger_1Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="R_IndexFinger_2Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="R_IndexFinger_2Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="R_IndexFinger_2Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="R_IndexFinger_6AF_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="R_IndexFinger_6AF_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="R_IndexFinger_6AF_FIXED"/>
+  </transmission>
+  <transmission name="R_LittleFinger_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="R_LittleFinger_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="R_LittleFinger_FIXED"/>
+  </transmission>
+  <transmission name="R_LittleFinger_1Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="R_LittleFinger_1Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="R_LittleFinger_1Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="R_LittleFinger_2Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="R_LittleFinger_2Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="R_LittleFinger_2Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="R_LittleFinger_6AF_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="R_LittleFinger_6AF_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="R_LittleFinger_6AF_FIXED"/>
+  </transmission>
+  <transmission name="R_MidFinger_1Z_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="R_MidFinger_1Z_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="R_MidFinger_1Z_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="R_MidFinger_1Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="R_MidFinger_1Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="R_MidFinger_1Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="R_MidFinger_2Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="R_MidFinger_2Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="R_MidFinger_2Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="R_MidFinger_6AF_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="R_MidFinger_6AF_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="R_MidFinger_6AF_FIXED"/>
+  </transmission>
+  <transmission name="R_RingFinger_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="R_RingFinger_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="R_RingFinger_FIXED"/>
+  </transmission>
+  <transmission name="R_RingFinger_1Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="R_RingFinger_1Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="R_RingFinger_1Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="R_RingFinger_2Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="R_RingFinger_2Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="R_RingFinger_2Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="R_RingFinger_6AF_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="R_RingFinger_6AF_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="R_RingFinger_6AF_FIXED"/>
+  </transmission>
+  <transmission name="R_Thumb_1Z_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="R_Thumb_1Z_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="R_Thumb_1Z_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="R_Thumb_1Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="R_Thumb_1Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="R_Thumb_1Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="R_Thumb_2Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="R_Thumb_2Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="R_Thumb_2Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="R_Thumb_6AF_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="R_Thumb_6AF_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="R_Thumb_6AF_FIXED"/>
+  </transmission>
+  <transmission name="LLeg_1Z_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LLeg_1Z_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LLeg_1Z_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="LLeg_1X_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LLeg_1X_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LLeg_1X_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="LLeg_1Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LLeg_1Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LLeg_1Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="LLeg_2Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LLeg_2Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LLeg_2Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="LLeg_3Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LLeg_3Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LLeg_3Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="LLeg_3X_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LLeg_3X_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LLeg_3X_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="LLeg_6AF_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LLeg_6AF_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LLeg_6AF_FIXED"/>
+  </transmission>
+  <transmission name="LLeg_FOOT_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LLeg_FOOT_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LLeg_FOOT_FIXED"/>
+  </transmission>
+  <transmission name="RLeg_1Z_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RLeg_1Z_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RLeg_1Z_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="RLeg_1X_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RLeg_1X_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RLeg_1X_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="RLeg_1Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RLeg_1Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RLeg_1Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="RLeg_2Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RLeg_2Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>/>
+    <actuator name="RLeg_2Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="RLeg_3Y_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RLeg_3Y_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RLeg_3Y_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="RLeg_3X_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RLeg_3X_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RLeg_3X_MOTOR"/>
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <transmission name="RLeg_6AF_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RLeg_6AF_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RLeg_6AF_FIXED"/>
+  </transmission>
+  <transmission name="RLeg_FOOT_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RLeg_FOOT_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RLeg_FOOT_FIXED"/>
+  </transmission>
+  <transmission name="GGYRO_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="GGYRO_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="GGYRO_FIXED"/>
+  </transmission>
+  <transmission name="PAN_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="PAN_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="PAN_MOTOR"/>
+  </transmission>
+  <transmission name="TILT1_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="TILT1_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="TILT1_MOTOR"/>
+  </transmission>
+  <transmission name="TILT2_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="TILT2_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="TILT2_MOTOR"/>
+  </transmission>
+  <transmission name="TILT3_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="TILT3_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="TILT3_MOTOR"/>
+  </transmission>
+  <transmission name="ROLL_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="ROLL_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="ROLL_MOTOR"/>
+  </transmission>
+
+</robot>
